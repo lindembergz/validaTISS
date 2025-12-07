@@ -16,7 +16,8 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* ADICIONE O BASENAME AQUI ABAIXO 👇 */}
+      <BrowserRouter basename="/validaTISS">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/validar" element={<Validar />} />
