@@ -1,4 +1,4 @@
-export type GuiaType = 
+export type GuiaType =
   | 'tissGuiaSP_SADT'
   | 'tissGuiaConsulta'
   | 'tissGuiaHonorarioIndividual'
@@ -80,3 +80,12 @@ export const COMMON_GLOSA_CODES: Record<string, string> = {
   '0007': 'CPF/CNPJ inválido',
   '0008': 'Beneficiário não encontrado',
 };
+
+// Re-export tipos de regras para conveniência
+export type {
+  ValidationRule,
+  ValidationContext,
+  RuleEngineResult,
+  RuleEngineOptions,
+} from '@/lib/rules/rule-types';
+
