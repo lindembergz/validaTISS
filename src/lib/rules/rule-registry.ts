@@ -12,6 +12,9 @@ import {
     CNSValidationRule,
     DateFormatRule,
     DateLogicRule,
+    TUSSCodeRule,
+    UFCodeRule,
+    ConselhoProfissionalRule,
 } from './business-rules';
 
 /**
@@ -65,6 +68,9 @@ export {
     CNSValidationRule,
     DateFormatRule,
     DateLogicRule,
+    TUSSCodeRule,
+    UFCodeRule,
+    ConselhoProfissionalRule,
 } from './business-rules';
 
 /**

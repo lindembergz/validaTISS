@@ -1,0 +1,246 @@
+import type { GuiaType, ValidationError } from '@/types/tiss';
+import type { ValidationRule, ValidationContext } from './rule-types';
+import { isValidCPF, isValidCNPJ, isValidCNS, formatCPF, formatCNPJ, formatCNS } from './validators/document-validators';
+import { isValidTISSDate, isDateInFuture, isDateAfterOrEqual, formatDateBR } from './validators/date-validators';
+import { isValidUF, isValidConselhoProfissional, isValidTUSSFormat, getUFName, getConselhoProfissionalName, formatTUSSCode } from './validators/table-validators';
+
+/**
+ * Extrai todos os valores de um campo específico de um objeto aninhado
+ * Funciona com XMLs que têm namespaces (ans:, tiss:, etc) e estruturas aninhadas
+ */
+function extractFieldValues(obj: any, fieldName: string): string[] {
+    const values: string[] = [];
+    const searchTerm = fieldName.toLowerCase();
+    let keysChecked = 0;
+    let matchesFound = 0;
+
+    console.log(`[extractFieldValues] 🔍 Procurando por: "${searchTerm}"`);
+
+    function traverse(current: any, currentPath: string = '') {
+        if (!current || typeof current !== 'object') return;
+
+        // Se for array, itera sobre elementos
+        if (Array.isArray(current)) {
+            current.forEach((item, index) => traverse(item, `${currentPath}[${index}]`));
+            return;
+        }
+
+        for (const key in current) {
+            keysChecked++;
+
+            // Remove namespace prefix para comparação (ex: ans:cpf -> cpf)
+            const cleanKey = key.replace(/^[^:]+:/, '').toLowerCase();
+
+            // Verifica se o nome do campo corresponde
+            if (cleanKey.includes(searchTerm)) {
+
+                matchesFound++;
+                console.log(`[extractFieldValues]   ✓ MATCH! "${key}" (path: ${currentPath || 'root'})`);
+
+                const value = current[key];
+
+                // Se o valor é string, adiciona
+                if (typeof value === 'string' && value.trim()) {
+                    console.log(`[extractFieldValues]     → STRING: "${value}"`);
+                    values.push(value.trim());
+                }
+                // Se o valor é número, converte COM PADDING se necessário
+                else if (typeof value === 'number') {
+                    let strValue = String(value);
+
+                    // CORREÇÃO: CPF/CNPJ/CNS podem perder zeros à esquerda quando parseados como número
+                    // Fazemos padding baseado no tamanho esperado para cada tipo de documento
+                    if (cleanKey.includes('cpf') && strValue.length < 11) {
+                        strValue = strValue.padStart(11, '0');
+                        console.log(`[extractFieldValues]     → NUMBER: ${value} → PADDED CPF: "${strValue}"`);
+                    } else if (cleanKey.includes('cnpj') && strValue.length < 14) {
+                        strValue = strValue.padStart(14, '0');
+                        console.log(`[extractFieldValues]     → NUMBER: ${value} → PADDED CNPJ: "${strValue}"`);
+                    } else if (cleanKey.includes('cns') && strValue.length < 15) {
+                        strValue = strValue.padStart(15, '0');
+                        console.log(`[extractFieldValues]     → NUMBER: ${value} → PADDED CNS: "${strValue}"`);
+                    } else {
+                        console.log(`[extractFieldValues]     → NUMBER: ${value}`);
+                    }
+
+                    values.push(strValue);
+                }
+                // Se o valor é objeto com #text (formato do parser XML)
+                else if (value && typeof value === 'object' && '#text' in value) {
+                    const textValue = value['#text'];
+                    if (typeof textValue === 'string' && textValue.trim()) {
+                        console.log(`[extractFieldValues]     → #TEXT: "${textValue}"`);
+                        values.push(textValue.trim());
+                    }
+                }
+                // Se o valor é objeto, ainda traverse
+                else if (value && typeof value === 'object') {
+                    console.log(`[extractFieldValues]     → OBJETO (continuando busca...)`);
+                    traverse(value, `${currentPath}.${key}`);
+                }
+            } else {
+                // Continua a busca em profundidade
+                if (typeof current[key] === 'object' && current[key] !== null) {
+                    traverse(current[key], `${currentPath}.${key}`);
+                }
+            }
+        }
+    }
+
+    traverse(obj);
+
+    console.log(`[extractFieldValues] 📊 ${keysChecked} chaves, ${matchesFound} matches, ${values.length} valores`);
+
+    return [...new Set(values)]; // Remove duplicatas
+}
+
+// ... (código de CPF, CNPJ, CNS, DateFormat, DateLogic permanece o mesmo - vou adicionar apenas as novas regras ao final)
+
+/**
+ * Regra de validação de código TUSS (procedimentos)
+ * Valida formato dos códigos de procedimentos da tabela TUSS
+ */
+export class TUSSCodeRule implements ValidationRule {
+    id = 'tuss-code';
+    name = 'Validação de Código TUSS';
+    description = 'Valida formato dos códigos de procedimentos TUSS';
+    priority = 130;
+    enabled = true;
+
+    appliesTo(context: ValidationContext): boolean {
+        // Aplica para guias que têm procedimentos
+        return context.guiaType === 'tissGuiaSP_SADT' || 
+               context.guiaType === 'tissGuiaConsulta' ||
+               context.guiaType === 'tissGuiaOdontologia';
+    }
+
+    validate(context: ValidationContext): ValidationError[] {
+        const errors: ValidationError[] = [];
+
+        console.log(`\n========== TUSS CODE VALIDATION ==========`);
+
+        // Busca códigos de procedimento
+        const procedureCodes = extractFieldValues(context.parsedXml, 'codigoprocedimento');
+
+        console.log(`[TUSSCodeRule] Total de códigos encontrados: ${procedureCodes.length}`);
+
+        for (const code of procedureCodes) {
+            if (!isValidTUSSFormat(code)) {
+                console.log(`[TUSSCodeRule] ❌ Código TUSS inválido: ${code}`);
+                errors.push({
+                    id: crypto.randomUUID(),
+                    line: 0,
+                    column: 0,
+                    message: `Código TUSS com formato inválido: ${code}`,
+                    severity: 'warning',
+                    code: 'TABLE001',
+                    field: 'codigoProcedimento',
+                    suggestion: `Código TUSS deve ter 8 dígitos. Formato esperado: ${formatTUSSCode('12345678')}`,
+                });
+            } else {
+                console.log(`[TUSSCodeRule] ✅ Formato válido: ${formatTUSSCode(code)}`);
+            }
+        }
+
+        console.log(`===========================================\n`);
+        return errors;
+    }
+}
+
+/**
+ * Regra de validação de código de UF
+ * Valida códigos de Unidade da Federação contra tabela ANS
+ */
+export class UFCodeRule implements ValidationRule {
+    id = 'uf-code';
+    name = 'Validação de Código UF';
+    description = 'Valida códigos de UF contra tabela ANS';
+    priority = 131;
+    enabled = true;
+
+    appliesTo(_context: ValidationContext): boolean {
+        return true; // Aplica para todos
+    }
+
+    validate(context: ValidationContext): ValidationError[] {
+        const errors: ValidationError[] = [];
+
+        console.log(`\n========== UF CODE VALIDATION ==========`);
+
+        // Busca códigos de UF
+        const ufCodes = extractFieldValues(context.parsedXml, 'uf');
+
+        console.log(`[UFCodeRule] Total de UFs encontradas: ${ufCodes.length}`);
+
+        for (const code of ufCodes) {
+            if (!isValidUF(code)) {
+                console.log(`[UFCodeRule] ❌ UF inválida: ${code}`);
+                errors.push({
+                    id: crypto.randomUUID(),
+                    line: 0,
+                    column: 0,
+                    message: `Código de UF inválido: ${code}`,
+                    severity: 'error',
+                    code: 'TABLE002',
+                    field: 'UF',
+                    suggestion: `Código de UF deve estar na tabela ANS (01-53). Exemplos: 25 (Paraíba), 35 (São Paulo), 53 (Distrito Federal)`,
+                });
+            } else {
+                const ufName = getUFName(code);
+                console.log(`[UFCodeRule] ✅ UF válida: ${code} (${ufName})`);
+            }
+        }
+
+        console.log(`========================================\n`);
+        return errors;
+    }
+}
+
+/**
+ * Regra de validação de Conselho Profissional
+ * Valida códigos de conselho profissional contra tabela ANS
+ */
+export class ConselhoProfissionalRule implements ValidationRule {
+    id = 'conselho-profissional';
+    name = 'Validação de Conselho Profissional';
+    description = 'Valida códigos de conselho profissional contra tabela ANS';
+    priority = 132;
+    enabled = true;
+
+    appliesTo(_context: ValidationContext): boolean {
+        return true; // Aplica para todos
+    }
+
+    validate(context: ValidationContext): ValidationError[] {
+        const errors: ValidationError[] = [];
+
+        console.log(`\n========== CONSELHO PROFISSIONAL VALIDATION ==========`);
+
+        // Busca códigos de conselho profissional
+        const conselhoCodes = extractFieldValues(context.parsedXml, 'conselhoprofissional');
+
+        console.log(`[ConselhoProfissionalRule] Total de conselhos encontrados: ${conselhoCodes.length}`);
+
+        for (const code of conselhoCodes) {
+            if (!isValidConselhoProfissional(code)) {
+                console.log(`[ConselhoProfissionalRule] ❌ Conselho inválido: ${code}`);
+                errors.push({
+                    id: crypto.randomUUID(),
+                    line: 0,
+                    column: 0,
+                    message: `Código de Conselho Profissional inválido: ${code}`,
+                    severity: 'error',
+                    code: 'TABLE003',
+                    field: 'conselhoProfissional',
+                    suggestion: `Código deve estar na tabela ANS (01-10). Exemplos: 06 (CRM), 08 (CRO), 09 (CRP)`,
+                });
+            } else {
+                const conselhoName = getConselhoProfissionalName(code);
+                console.log(`[ConselhoProfissionalRule] ✅ Conselho válido: ${code} (${conselhoName})`);
+            }
+        }
+
+        console.log(`=====================================================\n`);
+        return errors;
+    }
+}
