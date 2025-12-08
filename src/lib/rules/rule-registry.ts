@@ -10,6 +10,8 @@ import {
     CPFValidationRule,
     CNPJValidationRule,
     CNSValidationRule,
+    DateFormatRule,
+    DateLogicRule,
 } from './business-rules';
 
 /**
@@ -35,6 +37,10 @@ export function registerBuiltInRules(): void {
     globalRuleEngine.register(new CNPJValidationRule());
     globalRuleEngine.register(new CNSValidationRule());
 
+    // Regras de validação de datas (Task 2 - Fase 2)
+    globalRuleEngine.register(new DateFormatRule());
+    globalRuleEngine.register(new DateLogicRule());
+
     const stats = globalRuleEngine.getStats();
     console.log(`✓ ${stats.total} regras registradas (${stats.enabled} habilitadas)`);
 }
@@ -57,6 +63,8 @@ export {
     CPFValidationRule,
     CNPJValidationRule,
     CNSValidationRule,
+    DateFormatRule,
+    DateLogicRule,
 } from './business-rules';
 
 /**

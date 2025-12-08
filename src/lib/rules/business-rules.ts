@@ -1,6 +1,7 @@
 import type { GuiaType, ValidationError } from '@/types/tiss';
 import type { ValidationRule, ValidationContext } from './rule-types';
 import { isValidCPF, isValidCNPJ, isValidCNS, formatCPF, formatCNPJ, formatCNS } from './validators/document-validators';
+import { isValidTISSDate, isDateInFuture, isDateAfterOrEqual, formatDateBR } from './validators/date-validators';
 
 /**
  * Extrai todos os valores de um campo específico de um objeto aninhado
@@ -228,6 +229,169 @@ export class CNSValidationRule implements ValidationRule {
             }
         }
 
+        return errors;
+    }
+}
+
+/**
+ * Regra de validação de formato de datas
+ * Valida se as datas estão no formato AAAA-MM-DD e  representam datas válidas
+ */
+export class DateFormatRule implements ValidationRule {
+    id = 'date-format';
+    name = 'Validação de Formato de Data';
+    description = 'Valida se as datas estão no formato TISS (AAAA-MM-DD) e são válidas';
+    priority = 120;
+    enabled = true;
+
+    // Campos de data comuns no TISS
+    private readonly dateFields = [
+        'data',
+        'dataatendimento',
+        'datasolicitacao',
+        'dataautorizacao',
+        'datarealizacao',
+        'dataadmissao',
+        'dataalta',
+        'dataemissao',
+        'dataenvio',
+        'dataregistro',
+        'datanascimento'
+    ];
+
+    appliesTo(_context: ValidationContext): boolean {
+        return true; // Aplica para todos os tipos
+    }
+
+    validate(context: ValidationContext): ValidationError[] {
+        const errors: ValidationError[] = [];
+
+        console.log(`\n========== DATE FORMAT VALIDATION ==========`);
+
+        // Procura por cada tipo de campo de data
+        for (const fieldName of this.dateFields) {
+            const dates = extractFieldValues(context.parsedXml, fieldName);
+
+            for (const dateStr of dates) {
+                if (!isValidTISSDate(dateStr)) {
+                    console.log(`[DateFormatRule] ❌ Data inválida: ${dateStr} (campo: ${fieldName})`);
+                    errors.push({
+                        id: crypto.randomUUID(),
+                        line: 0,
+                        column: 0,
+                        message: `Data inválida: ${dateStr}`,
+                        severity: 'error',
+                        code: 'DATE001',
+                        field: fieldName,
+                        suggestion: `Formato esperado: AAAA-MM-DD (ex: 2025-12-08). Verifique se a data existe no calendário.`,
+                    });
+                } else {
+                    console.log(`[DateFormatRule] ✅ Data válida: ${dateStr}`);
+                }
+            }
+        }
+
+        console.log(`===========================================\n`);
+        return errors;
+    }
+}
+
+/**
+ * Regra de validação de lógica de datas
+ * Valida consistência temporal entre datas (ex: data atendimento >= data solicitação)
+ */
+export class DateLogicRule implements ValidationRule {
+    id = 'date-logic';
+    name = 'Validação de Lógica de Datas';
+    description = 'Valida consistência temporal entre datas relacionadas';
+    priority = 121;
+    enabled = true;
+
+    appliesTo(context: ValidationContext): boolean {
+        // Aplica para guias que têm lógica de data
+        return context.guiaType !== 'unknown' && context.guiaType !== 'tissLoteGuias';
+    }
+
+    validate(context: ValidationContext): ValidationError[] {
+        const errors: ValidationError[] = [];
+
+        console.log(`\n========== DATE LOGIC VALIDATION ==========`);
+
+        // 1. Validar datas futuras em campos que não devem ter data futura
+        const pastOnlyFields = ['dataatendimento', 'datasolicitacao', 'dataautorizacao', 'datarealizacao', 'dataadmissao'];
+
+        for (const fieldName of pastOnlyFields) {
+            const dates = extractFieldValues(context.parsedXml, fieldName);
+            for (const dateStr of dates) {
+                if (isValidTISSDate(dateStr) && isDateInFuture(dateStr)) {
+                    console.log(`[DateLogicRule] ❌ Data futura em ${fieldName}: ${dateStr}`);
+                    errors.push({
+                        id: crypto.randomUUID(),
+                        line: 0,
+                        column: 0,
+                        message: `Data futura não permitida: ${formatDateBR(dateStr)}`,
+                        severity: 'error',
+                        code: 'DATE002',
+                        field: fieldName,
+                        suggestion: `O campo ${fieldName} não pode ter data futura.`,
+                    });
+                }
+            }
+        }
+
+        // 2. Validar ordem cronológica: data de atendimento >= data de solicitação
+        const datasAtendimento = extractFieldValues(context.parsedXml, 'dataatendimento');
+        const datasSolicitacao = extractFieldValues(context.parsedXml, 'datasolicitacao');
+
+        if (datasAtendimento.length > 0 && datasSolicitacao.length > 0) {
+            const dataAtend = datasAtendimento[0];
+            const dataSolic = datasSolicitacao[0];
+
+            if (isValidTISSDate(dataAtend) && isValidTISSDate(dataSolic)) {
+                if (!isDateAfterOrEqual(dataAtend, dataSolic)) {
+                    console.log(`[DateLogicRule] ❌ Data de atendimento anterior à solicitação`);
+                    errors.push({
+                        id: crypto.randomUUID(),
+                        line: 0,
+                        column: 0,
+                        message: `Data de atendimento (${formatDateBR(dataAtend)}) anterior à data de solicitação (${formatDateBR(dataSolic)})`,
+                        severity: 'error',
+                        code: 'DATE003',
+                        suggestion: `A data de atendimento deve ser posterior ou igual à data de solicitação.`,
+                    });
+                } else {
+                    console.log(`[DateLogicRule] ✅ Ordem cronológica válida`);
+                }
+            }
+        }
+
+        // 3. Validar alta >= admissão (para internações)
+        if (context.guiaType === 'tissGuiaInternacao') {
+            const datasAlta = extractFieldValues(context.parsedXml, 'dataalta');
+            const datasAdmissao = extractFieldValues(context.parsedXml, 'dataadmissao');
+
+            if (datasAlta.length > 0 && datasAdmissao.length > 0) {
+                const dataAlta = datasAlta[0];
+                const dataAdm = datasAdmissao[0];
+
+                if (isValidTISSDate(dataAlta) && isValidTISSDate(dataAdm)) {
+                    if (!isDateAfterOrEqual(dataAlta, dataAdm)) {
+                        console.log(`[DateLogicRule] ❌ Data de alta anterior à admissão`);
+                        errors.push({
+                            id: crypto.randomUUID(),
+                            line: 0,
+                            column: 0,
+                            message: `Data de alta (${formatDateBR(dataAlta)}) anterior à data de admissão (${formatDateBR(dataAdm)})`,
+                            severity: 'error',
+                            code: 'DATE004',
+                            suggestion: `A data de alta deve ser posterior ou igual à data de admissão.`,
+                        });
+                    }
+                }
+            }
+        }
+
+        console.log(`===========================================\n`);
         return errors;
     }
 }
