@@ -3,6 +3,9 @@ import type { ValidationRule, ValidationContext } from './rule-types';
 import { isValidCPF, isValidCNPJ, isValidCNS, formatCPF, formatCNPJ, formatCNS } from './validators/document-validators';
 import { isValidTISSDate, isDateInFuture, isDateAfterOrEqual, formatDateBR } from './validators/date-validators';
 
+// Re-export all additional rules
+export * from './rule-exports';
+
 /**
  * Extrai todos os valores de um campo específico de um objeto aninhado
  * Funciona com XMLs que têm namespaces (ans:, tiss:, etc) e estruturas aninhadas

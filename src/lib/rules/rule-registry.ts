@@ -18,6 +18,26 @@ import {
     AuthorizationConsistencyRule,
     BeneficiaryConsistencyRule,
     ValueConsistencyRule,
+    RNAtendimentoRule,
+    CaraterAtendimentoRule,
+    TipoConsultaRule,
+    TUSSVersionRule,
+    TabelaProcedimentoRule,
+    CID10ObrigatorioRule,
+    QtdMaxProcedimentosRule,
+    QuantidadeSessionRule,
+    CoberturiaAcomodacaoRule,
+    CNESObrigatorioRule,
+    DadosExecutanteCompletoRule,
+    DadosSolicitanteCompletoRule,
+    IdadeProcedimentoRule,
+    CarenciaRule,
+    LimiteLoteRule,
+    NumeroLoteUnicoRule,
+    SenhaAutorizacaoRule,
+    DataAutorizacaoVencidaRule,
+    AnexoObrigatorioRule,
+    AnexoFormatoRule,
 } from './business-rules';
 
 /**
@@ -46,6 +66,42 @@ export function registerBuiltInRules(): void {
     // Regras de validação de datas (Task 2 - Fase 2)
     globalRuleEngine.register(new DateFormatRule());
     globalRuleEngine.register(new DateLogicRule());
+
+    // Regras de valid ação de tabelas (Task 2 - Fase 3)
+    globalRuleEngine.register(new TUSSCodeRule());
+    globalRuleEngine.register(new UFCodeRule());
+    globalRuleEngine.register(new ConselhoProfissionalRule());
+
+    // Regras de relacionamento (Task 2 - Fase 4)
+    globalRuleEngine.register(new AuthorizationConsistencyRule());
+    globalRuleEngine.register(new BeneficiaryConsistencyRule());
+    globalRuleEngine.register(new ValueConsistencyRule());
+
+    // Regras de negócio (Task 2 - Fase 5)
+    globalRuleEngine.register(new RNAtendimentoRule());
+    globalRuleEngine.register(new CaraterAtendimentoRule());
+    globalRuleEngine.register(new TipoConsultaRule());
+
+    // ⭐ REGRAS CRÍTICAS ANTI-GLOSA (9 regras)
+    globalRuleEngine.register(new TUSSVersionRule());
+    globalRuleEngine.register(new TabelaProcedimentoRule());
+    globalRuleEngine.register(new CID10ObrigatorioRule());
+    globalRuleEngine.register(new QtdMaxProcedimentosRule());
+    globalRuleEngine.register(new QuantidadeSessionRule());
+    globalRuleEngine.register(new CoberturiaAcomodacaoRule());
+    globalRuleEngine.register(new CNESObrigatorioRule());
+    globalRuleEngine.register(new DadosExecutanteCompletoRule());
+    globalRuleEngine.register(new DadosSolicitanteCompletoRule());
+
+    // 🔸 REGRAS COMPLEMENTARES ANTI-GLOSA (8 regras)
+    globalRuleEngine.register(new IdadeProcedimentoRule());
+    globalRuleEngine.register(new CarenciaRule());
+    globalRuleEngine.register(new LimiteLoteRule());
+    globalRuleEngine.register(new NumeroLoteUnicoRule());
+    globalRuleEngine.register(new SenhaAutorizacaoRule());
+    globalRuleEngine.register(new DataAutorizacaoVencidaRule());
+    globalRuleEngine.register(new AnexoObrigatorioRule());
+    globalRuleEngine.register(new AnexoFormatoRule());
 
     const stats = globalRuleEngine.getStats();
     console.log(`✓ ${stats.total} regras registradas (${stats.enabled} habilitadas)`);
@@ -77,6 +133,18 @@ export {
     AuthorizationConsistencyRule,
     BeneficiaryConsistencyRule,
     ValueConsistencyRule,
+    RNAtendimentoRule,
+    CaraterAtendimentoRule,
+    TipoConsultaRule,
+    TUSSVersionRule,
+    TabelaProcedimentoRule,
+    CID10ObrigatorioRule,
+    QtdMaxProcedimentosRule,
+    QuantidadeSessionRule,
+    CoberturiaAcomodacaoRule,
+    CNESObrigatorioRule,
+    DadosExecutanteCompletoRule,
+    DadosSolicitanteCompletoRule,
 } from './business-rules';
 
 /**
