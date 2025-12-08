@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { 
-  CheckCircle2, 
-  XCircle, 
-  AlertTriangle, 
-  Clock, 
+import {
+  CheckCircle2,
+  XCircle,
+  AlertTriangle,
+  Clock,
   FileText,
   ChevronDown,
   ChevronUp,
@@ -11,6 +11,7 @@ import {
   Download
 } from 'lucide-react';
 import { useState } from 'react';
+import DOMPurify from 'dompurify';
 import { ValidationResult, GUIA_TYPE_LABELS } from '@/types/tiss';
 import { formatFileSize } from '@/lib/xml-validator';
 import { Button } from '@/components/ui/button';
@@ -74,7 +75,7 @@ export function ValidationResultCard({ result, index }: ValidationResultCardProp
       warnings: result.warnings,
       metadata: result.metadata,
     };
-    
+
     const blob = new Blob([JSON.stringify(report, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -93,7 +94,7 @@ export function ValidationResultCard({ result, index }: ValidationResultCardProp
       className="bg-card border border-border rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow"
     >
       {/* Header */}
-      <div 
+      <div
         className="flex items-center gap-4 p-4 cursor-pointer hover:bg-muted/50 transition-colors"
         onClick={() => setIsExpanded(!isExpanded)}
       >
@@ -191,7 +192,7 @@ export function ValidationResultCard({ result, index }: ValidationResultCardProp
               </h4>
               <div className="space-y-2">
                 {result.errors.map((error) => (
-                  <div 
+                  <div
                     key={error.id}
                     className="p-3 rounded-lg bg-destructive/5 border border-destructive/10"
                   >
@@ -230,7 +231,7 @@ export function ValidationResultCard({ result, index }: ValidationResultCardProp
               </h4>
               <div className="space-y-2">
                 {result.warnings.map((warning) => (
-                  <div 
+                  <div
                     key={warning.id}
                     className="p-3 rounded-lg bg-warning/5 border border-warning/10"
                   >
@@ -271,10 +272,10 @@ export function ValidationResultCard({ result, index }: ValidationResultCardProp
                   </Button>
                 </div>
               </div>
-              
+
               {showXml && (
                 <pre className="p-4 rounded-lg bg-muted/50 border border-border overflow-x-auto text-xs font-mono max-h-64">
-                  {result.xmlContent.substring(0, 5000)}
+                  {DOMPurify.sanitize(result.xmlContent.substring(0, 5000))}
                   {result.xmlContent.length > 5000 && '\n... (truncado)'}
                 </pre>
               )}

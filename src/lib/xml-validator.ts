@@ -1,5 +1,7 @@
 import { XMLParser, XMLValidator as FastXMLValidator } from 'fast-xml-parser';
 import { GuiaType, ValidationError, ValidationResult, ValidationStatus } from '@/types/tiss';
+import { validateAgainstXSD } from './xsd-validator';
+import type { XSDValidationOptions } from './schema-config';
 
 const TISS_NAMESPACE = 'http://www.ans.gov.br/padroes/tiss/schemas';
 const TISS_VERSION = '4.02.00';
@@ -7,6 +9,7 @@ const TISS_VERSION = '4.02.00';
 interface XMLValidationOptions {
   validateSchema?: boolean;
   extractMetadata?: boolean;
+  xsdValidation?: XSDValidationOptions;
 }
 
 export function detectGuiaType(xmlContent: string): GuiaType {
@@ -33,11 +36,11 @@ export function detectGuiaType(xmlContent: string): GuiaType {
 
 export function extractMetadata(parsedXml: any): ValidationResult['metadata'] {
   const metadata: ValidationResult['metadata'] = {};
-  
+
   try {
     // Navigate through common TISS structure
     const content = parsedXml?.mensagemTISS || parsedXml;
-    
+
     // Extract registroANS
     const findValue = (obj: any, keys: string[]): string | undefined => {
       for (const key of keys) {
@@ -51,7 +54,7 @@ export function extractMetadata(parsedXml: any): ValidationResult['metadata'] {
       }
       return undefined;
     };
-    
+
     metadata.registroANS = findValue(content, ['registroANS', 'codigoOperadora']);
     metadata.numeroGuia = findValue(content, ['numeroGuiaPrestador', 'numeroGuiaOperadora', 'numeroGuia']);
     metadata.dataEmissao = findValue(content, ['dataEmissaoGuia', 'dataAtendimento', 'dataSolicitacao']);
@@ -60,13 +63,13 @@ export function extractMetadata(parsedXml: any): ValidationResult['metadata'] {
   } catch {
     // Silently fail metadata extraction
   }
-  
+
   return metadata;
 }
 
 export function validateXMLStructure(xmlContent: string): ValidationError[] {
   const errors: ValidationError[] = [];
-  
+
   // Check for BOM
   if (xmlContent.charCodeAt(0) === 0xFEFF) {
     errors.push({
@@ -79,7 +82,7 @@ export function validateXMLStructure(xmlContent: string): ValidationError[] {
       suggestion: 'Salve o arquivo como UTF-8 sem BOM',
     });
   }
-  
+
   // Check XML declaration
   if (!xmlContent.trim().startsWith('<?xml')) {
     errors.push({
@@ -92,7 +95,7 @@ export function validateXMLStructure(xmlContent: string): ValidationError[] {
       suggestion: 'Adicione: <?xml version="1.0" encoding="UTF-8"?>',
     });
   }
-  
+
   // Check encoding
   const encodingMatch = xmlContent.match(/encoding=['"]([\w-]+)['"]/i);
   if (encodingMatch && encodingMatch[1].toUpperCase() !== 'UTF-8') {
@@ -106,12 +109,12 @@ export function validateXMLStructure(xmlContent: string): ValidationError[] {
       suggestion: 'Altere o encoding para UTF-8',
     });
   }
-  
+
   // Use fast-xml-parser for basic validation
   const validationResult = FastXMLValidator.validate(xmlContent, {
     allowBooleanAttributes: true,
   });
-  
+
   if (validationResult !== true) {
     const err = validationResult.err;
     errors.push({
@@ -123,13 +126,13 @@ export function validateXMLStructure(xmlContent: string): ValidationError[] {
       code: 'E002',
     });
   }
-  
+
   return errors;
 }
 
 export function validateTISSNamespace(xmlContent: string): ValidationError[] {
   const errors: ValidationError[] = [];
-  
+
   // Check for TISS namespace
   if (!xmlContent.includes('ans.gov.br')) {
     errors.push({
@@ -142,7 +145,7 @@ export function validateTISSNamespace(xmlContent: string): ValidationError[] {
       suggestion: `Adicione o namespace: xmlns="http://www.ans.gov.br/padroes/tiss/schemas"`,
     });
   }
-  
+
   // Check version
   if (!xmlContent.includes('4.02') && !xmlContent.includes('v4_02')) {
     errors.push({
@@ -155,13 +158,13 @@ export function validateTISSNamespace(xmlContent: string): ValidationError[] {
       suggestion: 'Verifique se o XML está no padrão TISS versão 4.02.00',
     });
   }
-  
+
   return errors;
 }
 
 export function validateRequiredFields(parsedXml: any, guiaType: GuiaType): ValidationError[] {
   const errors: ValidationError[] = [];
-  
+
   const requiredFieldsByType: Record<GuiaType, string[]> = {
     tissGuiaSP_SADT: [
       'registroANS',
@@ -198,10 +201,10 @@ export function validateRequiredFields(parsedXml: any, guiaType: GuiaType): Vali
     ],
     unknown: [],
   };
-  
+
   const requiredFields = requiredFieldsByType[guiaType];
   const xmlString = JSON.stringify(parsedXml).toLowerCase();
-  
+
   for (const field of requiredFields) {
     if (!xmlString.includes(field.toLowerCase())) {
       errors.push({
@@ -216,7 +219,7 @@ export function validateRequiredFields(parsedXml: any, guiaType: GuiaType): Vali
       });
     }
   }
-  
+
   return errors;
 }
 
@@ -229,20 +232,20 @@ export async function validateXML(
   const startTime = performance.now();
   const errors: ValidationError[] = [];
   const warnings: ValidationError[] = [];
-  
+
   // Remove BOM if present
   const cleanContent = xmlContent.replace(/^\uFEFF/, '');
-  
+
   // Step 1: Validate XML structure
   const structureErrors = validateXMLStructure(cleanContent);
   structureErrors.forEach(err => {
     if (err.severity === 'error') errors.push(err);
     else warnings.push(err);
   });
-  
+
   // Step 2: Detect guia type
   const guiaType = detectGuiaType(cleanContent);
-  
+
   if (guiaType === 'unknown') {
     warnings.push({
       id: crypto.randomUUID(),
@@ -253,18 +256,18 @@ export async function validateXML(
       code: 'W004',
     });
   }
-  
+
   // Step 3: Validate TISS namespace
   const namespaceErrors = validateTISSNamespace(cleanContent);
   namespaceErrors.forEach(err => {
     if (err.severity === 'error') errors.push(err);
     else warnings.push(err);
   });
-  
+
   // Step 4: Parse XML and extract metadata
   let parsedXml: any = null;
   let metadata: ValidationResult['metadata'] = {};
-  
+
   if (errors.filter(e => e.code === 'E002').length === 0) {
     try {
       const parser = new XMLParser({
@@ -275,7 +278,7 @@ export async function validateXML(
         trimValues: true,
       });
       parsedXml = parser.parse(cleanContent);
-      
+
       if (options.extractMetadata !== false) {
         metadata = extractMetadata(parsedXml);
       }
@@ -290,7 +293,7 @@ export async function validateXML(
       });
     }
   }
-  
+
   // Step 5: Validate required fields
   if (parsedXml && guiaType !== 'unknown') {
     const fieldErrors = validateRequiredFields(parsedXml, guiaType);
@@ -299,7 +302,31 @@ export async function validateXML(
       else warnings.push(err);
     });
   }
-  
+
+  // Step 6: Validate against XSD schema
+  if (options.xsdValidation?.enabled !== false && guiaType !== 'unknown') {
+    try {
+      const xsdErrors = await validateAgainstXSD(
+        cleanContent,
+        guiaType,
+        options.xsdValidation
+      );
+      xsdErrors.forEach(err => {
+        if (err.severity === 'error') errors.push(err);
+        else warnings.push(err);
+      });
+    } catch (err) {
+      warnings.push({
+        id: crypto.randomUUID(),
+        line: 1,
+        column: 1,
+        message: `Validação XSD falhou: ${err instanceof Error ? err.message : 'Erro desconhecido'}`,
+        severity: 'warning',
+        code: 'XSD011',
+      });
+    }
+  }
+
   // Determine final status
   let status: ValidationStatus = 'valid';
   if (errors.length > 0) {
@@ -307,9 +334,9 @@ export async function validateXML(
   } else if (warnings.length > 0) {
     status = 'warning';
   }
-  
+
   const processingTime = performance.now() - startTime;
-  
+
   return {
     id: crypto.randomUUID(),
     fileName,
