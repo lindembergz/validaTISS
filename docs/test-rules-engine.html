@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Motor de Regras TISS</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+        h2 {
+            color: #666;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 16px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        .success {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .error {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .warning {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        .info {
+            color: #17a2b8;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 12px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-size: 12px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .stat-card {
+            background: white;
+            padding: 16px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 Motor de Regras TISS - Teste Manual</h1>
+        <p class="info">Esta página testa o motor de regras implementado para validação de arquivos XML TISS.</p>
+        
+        <div class="test-section">
+            <h2>📊 Estatísticas do Motor</h2>
+            <button onclick="showEngineStats()">Mostrar Estatísticas</button>
+            <div id="engine-stats"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>📝 Listar Regras Registradas</h2>
+            <button onclick="listRules()">Listar Todas as Regras</button>
+            <div id="rules-list"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>✅ Testar XML Válido</h2>
+            <button onclick="testValidXML()">Executar Teste com XML Válido</button>
+            <div id="valid-xml-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>❌ Testar XML Inválido</h2>
+            <button onclick="testInvalidXML()">Executar Teste com XML Inválido</button>
+            <div id="invalid-xml-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>⚠️ Testar XML com Warnings</h2>
+            <button onclick="testWarningXML()">Executar Teste com Warnings</button>
+            <div id="warning-xml-result"></div>
+        </div>
+
+        <div class="test-section">
+            <h2>🔍 Console do Navegador</h2>
+            <p>Abra o console do navegador (F12) para ver logs detalhados da execução.</p>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import do motor de regras
+        import { globalRuleEngine } from '/src/lib/rules/index.ts';
+        import { validateXML } from '/src/lib/xml-validator.ts';
+
+        // Tornar funções disponíveis globalmente
+        window.globalRuleEngine = globalRuleEngine;
+        window.validateXML = validateXML;
+
+        console.log('✓ Motor de Regras carregado:', globalRuleEngine);
+
+        window.showEngineStats = function() {
+            const stats = globalRuleEngine.getStats();
+            const html = `
+                <div class="stats">
+                    <div class="stat-card">
+                        <div class="stat-label">Total de Regras</div>
+                        <div class="stat-value">${stats.total}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Regras Habilitadas</div>
+                        <div class="stat-value class="success">${stats.enabled}</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Regras Desabilitadas</div>
+                        <div class="stat-value">${stats.disabled}</div>
+                    </div>
+                </div>
+                <pre>${JSON.stringify(stats, null, 2)}</pre>
+            `;
+            document.getElementById('engine-stats').innerHTML = html;
+        };
+
+        window.listRules = function() {
+            const rules = globalRuleEngine.getAllRules();
+            let html = '<h3>Regras Registradas (ordenadas por prioridade):</h3>';
+            html += '<ul>';
+            rules.forEach(rule => {
+                const statusClass = rule.enabled ? 'success' : 'error';
+                html += `
+                    <li>
+                        <strong>${rule.name}</strong> (${rule.id}) 
+                        - Prioridade: ${rule.priority} 
+                        - Status: <span class="${statusClass}">${rule.enabled ? 'Habilitada' : 'Desabilitada'}</span>
+                        <br><em>${rule.description}</em>
+                    </li>
+                `;
+            });
+            html += '</ul>';
+            document.getElementById('rules-list').innerHTML = html;
+        };
+
+        window.testValidXML = async function() {
+            const validXML = `<?xml version="1.0" encoding="UTF-8"?>
+<mensagemTISS xmlns="http://www.ans.gov.br/padroes/tiss/schemas">
+    <cabecalho>
+        <identificacaoTransacao>
+            <tipoTransacao>ENVIO_LOTE_GUIAS</tipoTransacao>
+            <sequencialTransacao>1</sequencialTransacao>
+            <dataRegistroTransacao>2024-01-01</dataRegistroTransacao>
+            <horaRegistroTransacao>10:00:00</horaRegistroTransacao>
+        </identificacaoTransacao>
+        <origem>
+            <identificacaoPrestador>
+                <codigoPrestadorNaOperadora>12345</codigoPrestadorNaOperadora>
+            </identificacaoPrestador>
+        </origem>
+        <destino>
+            <registroANS>123456</registroANS>
+        </destino>
+        <versaoPadrao>4.02.00</versaoPadrao>
+    </cabecalho>
+    <loteGuias>
+        <numeroLote>001</numeroLote>
+        <registroANS>123456</registroANS>
+        <dataEnvio>2024-01-01</dataEnvio>
+    </loteGuias>
+</mensagemTISS>`;
+
+            console.log('Testando XML válido...');
+            const result = await validateXML(validXML, 'test-valid.xml', validXML.length);
+            
+            const html = `
+                <h3 class="${result.status === 'valid' ? 'success' : 'error'}">Status: ${result.status}</h3>
+                <p><strong>Tipo de Guia:</strong> ${result.guiaType}</p>
+                <p><strong>Erros:</strong> ${result.errors.length}</p>
+                <p><strong>Avisos:</strong> ${result.warnings.length}</p>
+                <p><strong>Tempo de Processamento:</strong> ${result.processingTime.toFixed(2)}ms</p>
+                <pre>${JSON.stringify(result, null, 2)}</pre>
+            `;
+            document.getElementById('valid-xml-result').innerHTML = html;
+            console.log('Resultado:', result);
+        };
+
+        window.testInvalidXML = async function() {
+            const invalidXML = `<mensagemTISS>
+    <loteGuias>
+        <numeroLote>001</numeroLote>
+    </loteGuias>
+</mensagemTISS>`;
+
+            console.log('Testando XML inválido...');
+            const result = await validateXML(invalidXML, 'test-invalid.xml', invalidXML.length);
+            
+            let html = `
+                <h3 class="${result.status === 'invalid' ? 'error' : 'success'}">Status: ${result.status}</h3>
+                <p><strong>Tipo de Guia:</strong> ${result.guiaType}</p>
+                <p><strong>Erros:</strong> ${result.errors.length}</p>
+                <p><strong>Avisos:</strong> ${result.warnings.length}</p>
+                <p><strong>Tempo de Processamento:</strong> ${result.processingTime.toFixed(2)}ms</p>
+            `;
+            
+            if (result.errors.length > 0) {
+                html += '<h4>Erros Encontrados:</h4><ul>';
+                result.errors.forEach(err => {
+                    html += `<li class="error">[${err.code}] ${err.message}</li>`;
+                });
+                html += '</ul>';
+            }
+            
+            html += `<pre>${JSON.stringify(result, null, 2)}</pre>`;
+            document.getElementById('invalid-xml-result').innerHTML = html;
+            console.log('Resultado:', result);
+        };
+
+        window.testWarningXML = async function() {
+            const warningXML = `<?xml version="1.0" encoding="ISO-8859-1"?>
+<mensagemTISS xmlns="http://www.ans.gov.br/padroes/tiss/schemas">
+    <loteGuias>
+        <numeroLote>001</numeroLote>
+        <registroANS>123456</registroANS>
+        <dataEnvio>2024-01-01</dataEnvio>
+    </loteGuias>
+</mensagemTISS>`;
+
+            console.log('Testando XML com warnings...');
+            const result = await validateXML(warningXML, 'test-warning.xml', warningXML.length);
+            
+            let html = `
+                <h3 class="warning">Status: ${result.status}</h3>
+                <p><strong>Tipo de Guia:</strong> ${result.guiaType}</p>
+                <p><strong>Erros:</strong> ${result.errors.length}</p>
+                <p><strong>Avisos:</strong> ${result.warnings.length}</p>
+                <p><strong>Tempo de Processamento:</strong> ${result.processingTime.toFixed(2)}ms</p>
+            `;
+            
+            if (result.warnings.length > 0) {
+                html += '<h4>Avisos Encontrados:</h4><ul>';
+                result.warnings.forEach(warn => {
+                    html += `<li class="warning">[${warn.code}] ${warn.message}</li>`;
+                });
+                html += '</ul>';
+            }
+            
+            html += `<pre>${JSON.stringify(result, null, 2)}</pre>`;
+            document.getElementById('warning-xml-result').innerHTML = html;
+            console.log('Resultado:', result);
+        };
+
+        // Auto-executar ao carregar
+        console.log('Página de teste carregada. Use os botões para executar os testes.');
+    </script>
+</body>
+</html>
