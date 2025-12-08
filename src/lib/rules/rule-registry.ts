@@ -15,6 +15,9 @@ import {
     TUSSCodeRule,
     UFCodeRule,
     ConselhoProfissionalRule,
+    AuthorizationConsistencyRule,
+    BeneficiaryConsistencyRule,
+    ValueConsistencyRule,
 } from './business-rules';
 
 /**
@@ -71,6 +74,9 @@ export {
     TUSSCodeRule,
     UFCodeRule,
     ConselhoProfissionalRule,
+    AuthorizationConsistencyRule,
+    BeneficiaryConsistencyRule,
+    ValueConsistencyRule,
 } from './business-rules';
 
 /**
