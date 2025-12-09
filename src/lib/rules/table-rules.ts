@@ -1,6 +1,7 @@
 import type { ValidationError } from '@/types/tiss';
 import type { ValidationRule, ValidationContext } from './rule-types';
 import { isValidUF, isValidConselhoProfissional, isValidTUSSFormat, getUFName, getConselhoProfissionalName, formatTUSSCode } from './validators/table-validators';
+import { TussTablesService } from '../services/tuss-tables.service';
 
 // Use direct function instead of import to avoid circular dependency
 function extractFieldValues(obj: any, fieldName: string): string[] {
@@ -34,36 +35,91 @@ function extractFieldValues(obj: any, fieldName: string): string[] {
 }
 
 /**
- * Regra de validação de código TUSS (procedimentos)
+ * Regra de validação de código TUSS (procedimentos) com validação contra tabela
  */
 export class TUSSCodeRule implements ValidationRule {
     id = 'tuss-code';
     name = 'Validação de Código TUSS';
-    description = 'Valida formato dos códigos TUSS';
+    description = 'Valida formato e existência dos códigos TUSS na Tabela 22';
     priority = 130;
     enabled = true;
 
     appliesTo(context: ValidationContext): boolean {
-        return context.guiaType === 'tissGuiaSP_SADT' ||
+        // Aceita lotes que contêm guias, ou guias individuais
+        return context.guiaType === 'tissLoteGuias' ||
+            context.guiaType === 'tissGuiaSP_SADT' ||
             context.guiaType === 'tissGuiaConsulta' ||
             context.guiaType === 'tissGuiaOdontologia';
     }
 
-    validate(context: ValidationContext): ValidationError[] {
+    async validate(context: ValidationContext): Promise<ValidationError[]> {
         const errors: ValidationError[] = [];
         const procedureCodes = extractFieldValues(context.parsedXml, 'codigoprocedimento');
+        console.log(`🔍 TUSSCodeRule: Encontrados ${procedureCodes.length} códigos:`, procedureCodes);
+
+        // Garante que tabela TUSS 22 está carregada
+        try {
+            await TussTablesService.initializeProcedures();
+        } catch (error) {
+            errors.push({
+                id: crypto.randomUUID(),
+                line: 0,
+                column: 0,
+                message: 'Erro ao carregar tabela TUSS para validação',
+                severity: 'warning',
+                code: 'TABLE000',
+                field: 'sistema',
+                suggestion: 'Verifique a disponibilidade do arquivo tuss22.json',
+            });
+            return errors;
+        }
 
         for (const code of procedureCodes) {
+            // Valida formato
             if (!isValidTUSSFormat(code)) {
                 errors.push({
                     id: crypto.randomUUID(),
                     line: 0,
                     column: 0,
-                    message: `Código TUSS inválido: ${code}`,
+                    message: `Código TUSS com formato inválido: ${code}`,
+                    severity: 'error',
+                    code: 'TABLE001',
+                    field: 'codigoProcedimento',
+                    suggestion: `Código TUSS deve ter 8 dígitos numéricos`,
+                });
+                continue;
+            }
+
+            // Valida existência na tabela
+            if (!TussTablesService.procedureExists(code)) {
+                console.log(`❌ Código ${code} NÃO encontrado na tabela TUSS`);
+                errors.push({
+                    id: crypto.randomUUID(),
+                    line: 0,
+                    column: 0,
+                    message: `Código TUSS não encontrado na Tabela 22: ${code}`,
+                    severity: 'error',
+                    code: 'TABLE001',
+                    field: 'codigoProcedimento',
+                    suggestion: 'Verifique se o código está correto ou se foi descontinuado',
+                });
+                continue;
+            } else {
+                console.log(`✅ Código ${code} encontrado na tabela TUSS`);
+            }
+
+            // Valida se está vigente
+            if (!TussTablesService.isValidProcedure(code)) {
+                const procedure = TussTablesService.getProcedure(code);
+                errors.push({
+                    id: crypto.randomUUID(),
+                    line: 0,
+                    column: 0,
+                    message: `Código TUSS não vigente: ${code} - "${procedure?.description}"`,
                     severity: 'warning',
                     code: 'TABLE001',
                     field: 'codigoProcedimento',
-                    suggestion: `Código TUSS deve ter 8 dígitos`,
+                    suggestion: 'Este código existe mas não está mais ativo na tabela TUSS',
                 });
             }
         }

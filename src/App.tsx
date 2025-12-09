@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { ErrorFallback } from "@/components/ErrorFallback";
+import { TussTablesService } from "@/lib/services/tuss-tables.service";
+import { useEffect } from "react";
 import Index from "./pages/Index";
 import Validar from "./pages/Validar";
 import Dashboard from "./pages/Dashboard";
@@ -12,6 +14,11 @@ import Historico from "./pages/Historico";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+
+// Inicializar tabelas TUSS no carregamento do app
+TussTablesService.initializeAll().catch((error) => {
+  console.error('Erro ao inicializar tabelas TUSS:', error);
+});
 
 const App = () => (
   <ErrorBoundary fallback={<ErrorFallback />}>

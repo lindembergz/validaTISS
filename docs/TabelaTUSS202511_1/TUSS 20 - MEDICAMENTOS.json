@@ -1,0 +1,1409 @@
+{
+  "meta": {
+    "version": "202511",
+    "table": "20",
+    "name": "Medicamentos"
+  },
+  "medications": {
+    "90035593": {
+      "description": "ORENCIA 250 MG PO LIQF INJ CT FA + SER DESC",
+      "principioAtivo": "Abatacept",
+      "concentracao": "250 MG",
+      "apresentacao": "PO LIQF INJ CT FA + SER DESC",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90255143": {
+      "description": "ORENCIA 125 MG/ML SOL INJ CT 1 SER PREENCHIDA",
+      "principioAtivo": "Abatacept",
+      "concentracao": "125 MG/ML",
+      "apresentacao": "SOL INJ CT 1 SER PREENCHIDA",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90255151": {
+      "description": "ORENCIA 125 MG/ML SOL INJ CT 4 SER PREENCHIDA",
+      "principioAtivo": "Abatacept",
+      "concentracao": "125 MG/ML",
+      "apresentacao": "SOL INJ CT 4 SER PREENCHIDA",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90255160": {
+      "description": "ORENCIA 125 MG/ML SOL INJ CT 1 SER PREENCHIDA + DISPOSITIVO ULTRASAFE",
+      "principioAtivo": "Abatacept",
+      "concentracao": "125 MG/ML",
+      "apresentacao": "SOL INJ CT 1 SER PREENCHIDA + DISPOSITIVO ULTRASAFE",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90255178": {
+      "description": "ORENCIA 125 MG/ML SOL INJ CT 4 SER PREENCHIDA + DISPOSITIVO ULTRASAFE",
+      "principioAtivo": "Abatacept",
+      "concentracao": "125 MG/ML",
+      "apresentacao": "SOL INJ CT 4 SER PREENCHIDA + DISPOSITIVO ULTRASAFE",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90293878": {
+      "description": "ORENCIA 125 MG/ML SOL INJ CT 1 SER PREENC VD TRANS + DISPOSITIVO ULTRASAFE PASSIVE + E",
+      "principioAtivo": "Abatacept",
+      "concentracao": "125 MG/ML",
+      "apresentacao": "SOL INJ CT 1 SER PREENC VD TRANS + DISPOSITIVO ULTRASAFE PASSIVE + E",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90293886": {
+      "description": "ORENCIA 125 MG/ML SOL INJ CT 4 SER PREENC VD TRANS + DISPOSITIVO ULTRASAFE PASSIVE + E",
+      "principioAtivo": "Abatacept",
+      "concentracao": "125 MG/ML",
+      "apresentacao": "SOL INJ CT 4 SER PREENC VD TRANS + DISPOSITIVO ULTRASAFE PASSIVE + E",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90051505": {
+      "description": "REOPRO 2 MG/ML SOL INJ CT FA VD INC X 5 ML",
+      "principioAtivo": "Abciximab",
+      "concentracao": "2 MG/ML",
+      "apresentacao": "SOL INJ CT FA VD INC X 5 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90403525": {
+      "description": "REOPRO 2 MG/ML SOL INJ CT FA VD INC X 5 ML",
+      "principioAtivo": "Abciximab",
+      "concentracao": "2 MG/ML",
+      "apresentacao": "SOL INJ CT FA VD INC X 5 ML",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90433149": {
+      "description": "VERZENIOS 50 MG COM REV CT BL AL AL X 30",
+      "principioAtivo": "Abemaciclib",
+      "concentracao": "50 MG",
+      "apresentacao": "COM REV CT BL AL AL X 30",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90433157": {
+      "description": "VERZENIOS 50 MG COM REV CT BL AL AL X 60",
+      "principioAtivo": "Abemaciclib",
+      "concentracao": "50 MG",
+      "apresentacao": "COM REV CT BL AL AL X 60",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90433165": {
+      "description": "VERZENIOS 100 MG COM REV CT BL AL AL X 30",
+      "principioAtivo": "Abemaciclib",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 30",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90433173": {
+      "description": "VERZENIOS 100 MG COM REV CT BL AL AL X 60",
+      "principioAtivo": "Abemaciclib",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 60",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90433181": {
+      "description": "VERZENIOS 150 MG COM REV CT BL AL AL X 30",
+      "principioAtivo": "Abemaciclib",
+      "concentracao": "150 MG",
+      "apresentacao": "COM REV CT BL AL AL X 30",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90433190": {
+      "description": "VERZENIOS 150 MG COM REV CT BL AL AL X 60",
+      "principioAtivo": "Abemaciclib",
+      "concentracao": "150 MG",
+      "apresentacao": "COM REV CT BL AL AL X 60",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90433203": {
+      "description": "VERZENIOS 200 MG COM REV CT BL AL AL X 30",
+      "principioAtivo": "Abemaciclib",
+      "concentracao": "200 MG",
+      "apresentacao": "COM REV CT BL AL AL X 30",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90433211": {
+      "description": "VERZENIOS 200 MG COM REV CT BL AL AL X 60",
+      "principioAtivo": "Abemaciclib",
+      "concentracao": "200 MG",
+      "apresentacao": "COM REV CT BL AL AL X 60",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90424182": {
+      "description": "CALQUENCE 100 MG CAP DURA CT BL AL AL X 60",
+      "principioAtivo": "Acalabrutinib",
+      "concentracao": "100 MG",
+      "apresentacao": "CAP DURA CT BL AL AL X 60",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90060393": {
+      "description": "AGLUCOSE 100 MG COM CT 3 BL AL PVDC LEIT X 10",
+      "principioAtivo": "Acarbose",
+      "concentracao": "100 MG",
+      "apresentacao": "COM CT 3 BL AL PVDC LEIT X 10",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90060407": {
+      "description": "AGLUCOSE 50 MG COM CT 3 BL AL PVDC LEIT X 10",
+      "principioAtivo": "Acarbose",
+      "concentracao": "50 MG",
+      "apresentacao": "COM CT 3 BL AL PVDC LEIT X 10",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90428994": {
+      "description": "AGLUCOSE 50 MG COM CT BL AL AL X 30",
+      "principioAtivo": "Acarbose",
+      "concentracao": "50 MG",
+      "apresentacao": "COM CT BL AL AL X 30",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90429001": {
+      "description": "AGLUCOSE 100 MG COM CT BL AL AL X 30",
+      "principioAtivo": "Acarbose",
+      "concentracao": "100 MG",
+      "apresentacao": "COM CT BL AL AL X 30",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90246853": {
+      "description": "GLUCORAY 50 MG COM CT BL AL AL X 30",
+      "principioAtivo": "Acarbose",
+      "concentracao": "50 MG",
+      "apresentacao": "COM CT BL AL AL X 30",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90246861": {
+      "description": "GLUCORAY 100 MG COM CT BL AL AL X 30",
+      "principioAtivo": "Acarbose",
+      "concentracao": "100 MG",
+      "apresentacao": "COM CT BL AL AL X 30",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90003179": {
+      "description": "BRONDILAT 10 MG / ML XPE CT ER PLAS PET AMB X 120 ML + CP MED X 10 ML",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG / ML",
+      "apresentacao": "XPE CT ER PLAS PET AMB X 120 ML + CP MED X 10 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90003195": {
+      "description": "BRONDILAT 5 MG / ML XPE CT ER PLAS PET AMB X 120 ML + CP MED X 10 ML",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG / ML",
+      "apresentacao": "XPE CT ER PLAS PET AMB X 120 ML + CP MED X 10 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90003209": {
+      "description": "BRONDILAT 5 MG / ML XPE CT ER PLAS PET AMB X 60 ML + CP MED X 10 ML",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG / ML",
+      "apresentacao": "XPE CT ER PLAS PET AMB X 60 ML + CP MED X 10 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90003187": {
+      "description": "BRONDILAT 10 MG / ML XPE CT ER PLAS PET AMB X 60 ML + CP MED X 10 ML",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG / ML",
+      "apresentacao": "XPE CT ER PLAS PET AMB X 60 ML + CP MED X 10 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90374517": {
+      "description": "BRONDYNEQ 10 MG / ML XPE CT ER VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG / ML",
+      "apresentacao": "XPE CT ER VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/01/2018"
+    },
+    "90374525": {
+      "description": "BRONDYNEQ 5 MG / ML XPE CT ER VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG / ML",
+      "apresentacao": "XPE CT ER VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/01/2018"
+    },
+    "90375343": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/01/2018"
+    },
+    "90375351": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/01/2018"
+    },
+    "90042247": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90042255": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90301951": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CX 50 FR PLAS AMB X 120 ML + 50 CP MED (EMB HOSP)",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CX 50 FR PLAS AMB X 120 ML + 50 CP MED (EMB HOSP)",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90301960": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CX 50 FR PLAS AMB X 120 ML + 50 CP MED (EMB HOSP)",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CX 50 FR PLAS AMB X 120 ML + 50 CP MED (EMB HOSP)",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90051670": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90051661": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90292049": {
+      "description": "FILINAR G 5 MG/ML GEL OR CT FR PLAS INC X 120ML + COL MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "GEL OR CT FR PLAS INC X 120ML + COL MED",
+      "vigente": true,
+      "startDate": "01/05/2014"
+    },
+    "90336313": {
+      "description": "FILINAR 10 MG/ML XPE CT FR VD AMB X 120 ML + COPO MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COPO MED",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90336321": {
+      "description": "FILINAR 5 MG/ML XPE CT FR VD AMB X 120 ML + COPO MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COPO MED",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90065760": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90065778": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90078578": {
+      "description": "ACEBROFILINA 10MG/ML XPE CT FR VD AMB X 120ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90078586": {
+      "description": "ACEBROFILINA 5MG/ML XPE CT FR VD AMB X 120ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90078993": {
+      "description": "BRONTEK 5 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90078985": {
+      "description": "BRONTEK 10 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90292979": {
+      "description": "LISOMUC 5 MG / ML XPE CT FR PET AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG / ML",
+      "apresentacao": "XPE CT FR PET AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/05/2014"
+    },
+    "90293002": {
+      "description": "LISOMUC 10 MG / ML XPE CT FR PET AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG / ML",
+      "apresentacao": "XPE CT FR PET AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/05/2014"
+    },
+    "90114256": {
+      "description": "RESPIRAN 5 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90114248": {
+      "description": "RESPIRAN 10 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90403819": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90403827": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90115821": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90115830": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90312333": {
+      "description": "ACEBROFILINA 5MG/ML XPE CT FR PLAS AMB X 120ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120ML + COP",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90312341": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PET AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PET AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90134990": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120ML ",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120ML ",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90135008": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120ML ",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120ML ",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90229584": {
+      "description": "DILABRONCO 10 MG/ML XPE CT FR PLAS OPC X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS OPC X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90229592": {
+      "description": "DILABRONCO 5 MG/ML XPE CT FR PLAS OPC X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS OPC X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90339797": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90339800": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90124570": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90124588": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120 ML + CP MED ",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED ",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90316274": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120 ML + DOSADOR  ",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + DOSADOR  ",
+      "vigente": true,
+      "startDate": "01/10/2019"
+    },
+    "90316282": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120 ML + DOSADOR ",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + DOSADOR ",
+      "vigente": true,
+      "startDate": "01/10/2019"
+    },
+    "90382765": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/01/2018"
+    },
+    "90382773": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/01/2018"
+    },
+    "90234219": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90234227": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90354508": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR PLAS AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/10/2016"
+    },
+    "90354532": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PLAS AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/10/2016"
+    },
+    "90081129": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90081137": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90177754": {
+      "description": "ACEBROFILINA 5 MG/ ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90177738": {
+      "description": "ACEBROFILINA 10 MG/ ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90237986": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CX 50 FR PLAS OPC X 120 ML + 50 CP MED (EMB HOSP)",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CX 50 FR PLAS OPC X 120 ML + 50 CP MED (EMB HOSP)",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90238001": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CX 50 FR PLAS OPC X 120 ML + 50 CP MED (EMB HOSP)",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CX 50 FR PLAS OPC X 120 ML + 50 CP MED (EMB HOSP)",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90261526": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PET AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PET AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/12/2013"
+    },
+    "90206509": {
+      "description": "ACEBROFILINA 5MG/ML XPE CT FR VD AMB X 120ML + SER DOSAD",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120ML + SER DOSAD",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90142080": {
+      "description": "BRONCOLEX 5 MG/ML XPE INF CT FR VD AMB X 120 ML + CP MED X 10 ML",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE INF CT FR VD AMB X 120 ML + CP MED X 10 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90142071": {
+      "description": "BRONCOLEX 10 MG/ML XPE AD CT FR VD AMB X 120 ML + CP MED X 10 ML",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE AD CT FR VD AMB X 120 ML + CP MED X 10 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90245733": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90245741": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR VD AMB X 120 ML + CP MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + CP MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90146905": {
+      "description": "BRONFILIL 5 MG/ML XPE CT FR VD AMB X 120 ML + COPO MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COPO MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90146891": {
+      "description": "BRONFILIL 10 MG/ML XPE CT FR VD AMB X 120 ML + COPO MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COPO MED",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90417690": {
+      "description": "DISMUCAL 5 MG/ML GEL OR CT FR PLAS INC X 60ML + COL MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "GEL OR CT FR PLAS INC X 60ML + COL MED",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90417704": {
+      "description": "DISMUCAL 5 MG/ML GEL OR CT FR PLAS INC X 120ML + COL MED",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "GEL OR CT FR PLAS INC X 120ML + COL MED",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90418050": {
+      "description": "DISMUCAL 5 MG/ML XPE CT FR VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90418069": {
+      "description": "DISMUCAL 10 MG/ML XPE CT FR VD AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR VD AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90434650": {
+      "description": "ACEBROFILINA 5 MG/ML XPE CT FR PLAS AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "5 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90434668": {
+      "description": "ACEBROFILINA 10 MG/ML XPE CT FR PLAS AMB X 120 ML + COP",
+      "principioAtivo": "Acebrofilina",
+      "concentracao": "10 MG/ML",
+      "apresentacao": "XPE CT FR PLAS AMB X 120 ML + COP",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90435516": {
+      "description": "ACECLOFENACO 100 MG COM REV CT STR AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT STR AL X 12",
+      "vigente": true,
+      "startDate": "01/10/2019"
+    },
+    "90051688": {
+      "description": "ACECLOFENACO 15 MG/G CREM DERM CT BG AL X 30 G",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "15 MG/G",
+      "apresentacao": "CREM DERM CT BG AL X 30 G",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90070569": {
+      "description": "PROFLAM 100 MG COM REV CT BL AL/AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL/AL X 12",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90070550": {
+      "description": "PROFLAM 15 MG/G CREM DERM CT TB AL X 30 G",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "15 MG/G",
+      "apresentacao": "CREM DERM CT TB AL X 30 G",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90070577": {
+      "description": "PROFLAM 100 MG COM REV CT BL AL / AL X 6",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL / AL X 6",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90275489": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 12",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90275497": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL AL X 24",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 24",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90426380": {
+      "description": "ACEFLOR 100 MG COM REV CT BL AL AL X 6",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 6",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90426398": {
+      "description": "ACEFLOR 100 MG COM REV CT BL AL AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 12",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90426401": {
+      "description": "ACEFLOR 100 MG COM REV CT BL AL AL X 16",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 16",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90426410": {
+      "description": "ACEFLOR 100 MG COM REV CT BL AL AL X 24",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 24",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90426428": {
+      "description": "ACEFLOR 100 MG COM REV CT BL AL PLAS OPC X 6 ",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL PLAS OPC X 6 ",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90426436": {
+      "description": "ACEFLOR 100 MG COM REV CT BL AL PLAS OPC X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL PLAS OPC X 12",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90426444": {
+      "description": "ACEFLOR 100 MG COM REV CT BL AL PLAS OPC X 16",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL PLAS OPC X 16",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90426452": {
+      "description": "ACEFLOR 100 MG COM REV CT BL AL PLAS OPC X 24",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL PLAS OPC X 24",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90163516": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL/AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL/AL X 12",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90163770": {
+      "description": "CECOFENE 100 MG COM REV CT BL AL/AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL/AL X 12",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90235215": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL PLAS OPC X 24",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL PLAS OPC X 24",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90235223": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL PLAS OPC X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL PLAS OPC X 12",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90264967": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 12",
+      "vigente": true,
+      "startDate": "01/12/2013"
+    },
+    "90264975": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL AL X 24",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 24",
+      "vigente": true,
+      "startDate": "01/12/2013"
+    },
+    "90081145": {
+      "description": "ACECLOFENACO 15 MG/G CREM DERM CT BG AL X 30 G ",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "15 MG/G",
+      "apresentacao": "CREM DERM CT BG AL X 30 G ",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90185870": {
+      "description": "ACECLOFENACO 100 MG COM REV CT STR AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT STR AL X 12",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90185889": {
+      "description": "ACECLOFENACO 100 MG COM REV CT 2 STR AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT 2 STR AL X 12",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90259580": {
+      "description": "CECLOFLAN 100 MG COM REV CT ENV AL X 12 ",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT ENV AL X 12 ",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90324293": {
+      "description": "ACECLOFENACO 100 MG COM REV CT ENV AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT ENV AL X 12",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90324307": {
+      "description": "ACECLOFENACO 100 MG COM REV CT ENV AL X 16",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT ENV AL X 16",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90324315": {
+      "description": "ACECLOFENACO 100 MG COM REV CT ENV AL X 24",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT ENV AL X 24",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90324323": {
+      "description": "ACECLOFENACO 100 MG COM REV CT ENV AL X 480 (EMB HOSP)",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT ENV AL X 480 (EMB HOSP)",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90414900": {
+      "description": "ACECLOFENACO 100 MG COM CT BL AL/AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM CT BL AL/AL X 12",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90283856": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 12",
+      "vigente": true,
+      "startDate": "01/12/2013"
+    },
+    "90283708": {
+      "description": "ACECLO-GRAN 100 MG COM REV CT BL AL AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 12",
+      "vigente": true,
+      "startDate": "01/12/2013"
+    },
+    "90250044": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL PLAS OPC X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL PLAS OPC X 12",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90256476": {
+      "description": "ACECLOFENACO 100 MG COM REV CT BL AL AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 12",
+      "vigente": true,
+      "startDate": "01/12/2013"
+    },
+    "90256352": {
+      "description": "FEBUPEN 100 MG COM REV CT BL AL AL X 12",
+      "principioAtivo": "Aceclofenaco",
+      "concentracao": "100 MG",
+      "apresentacao": "COM REV CT BL AL AL X 12",
+      "vigente": true,
+      "startDate": "01/12/2013"
+    },
+    "90246691": {
+      "description": "ADVANTAN 1 MG/ML SOL TOP CT FR PLAS OPC GOT X 20 ML",
+      "principioAtivo": "Aceponato de metilprednisolona",
+      "concentracao": "1 MG/ML",
+      "apresentacao": "SOL TOP CT FR PLAS OPC GOT X 20 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90246705": {
+      "description": "ADVANTAN 1 MG/G EMU DERM CT BG AL X 20 G",
+      "principioAtivo": "Aceponato de metilprednisolona",
+      "concentracao": "1 MG/G",
+      "apresentacao": "EMU DERM CT BG AL X 20 G",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90247078": {
+      "description": "ADVANTAN 1 MG/G CREM DERM CT BG AL X 15 G",
+      "principioAtivo": "Aceponato de metilprednisolona",
+      "concentracao": "1 MG/G",
+      "apresentacao": "CREM DERM CT BG AL X 15 G",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90398645": {
+      "description": "ACETATO DE ABIRATERONA 250 MG COM REV CT FR PLAS OPC X 30",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM REV CT FR PLAS OPC X 30",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90398653": {
+      "description": "ACETATO DE ABIRATERONA 250 MG COM REV CT FR PLAS OPC X 60",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM REV CT FR PLAS OPC X 60",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90398661": {
+      "description": "ACETATO DE ABIRATERONA 250 MG COM REV CT FR PLAS OPC X 120",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM REV CT FR PLAS OPC X 120",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90398696": {
+      "description": "BALEFIO 250 MG COM REV CT FR PLAS OPC X 120",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM REV CT FR PLAS OPC X 120",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90399471": {
+      "description": "MATIZ 250 MG COM CT BL AL PLAS TRANS X 120",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM CT BL AL PLAS TRANS X 120",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90228430": {
+      "description": "ZYTIGA 250 MG COM CT FR PLAS OPC X 120",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM CT FR PLAS OPC X 120",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90425863": {
+      "description": "ZYTIGA® 500 MG COM REV CT FR PLAS OPC X 60",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "500 MG",
+      "apresentacao": "COM REV CT FR PLAS OPC X 60",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90426061": {
+      "description": "ZOSTIDE 250 MG COM CT BL AL PLAS TRANS X 120",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM CT BL AL PLAS TRANS X 120",
+      "vigente": true,
+      "startDate": "01/06/2019"
+    },
+    "90413652": {
+      "description": "ACETATO DE ABIRATERONA 250 MG COM CT FR PLAS OPC X 120",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM CT FR PLAS OPC X 120",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90437829": {
+      "description": "ABBA 250 MG COM CT FR PLAS OPC X 120",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM CT FR PLAS OPC X 120",
+      "vigente": true,
+      "startDate": "01/10/2019"
+    },
+    "90434315": {
+      "description": "RARIJA 250 MG COM REV CT FR PLAS OPC X 120",
+      "principioAtivo": "Acetato de abiraterona",
+      "concentracao": "250 MG",
+      "apresentacao": "COM REV CT FR PLAS OPC X 120",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90415132": {
+      "description": "ATTOSY 7,50 MG/ML SOL DIL INJ CT FA VD TRANS X 5 ML",
+      "principioAtivo": "Acetato de atosibana",
+      "concentracao": "7,50 MG/ML",
+      "apresentacao": "SOL DIL INJ CT FA VD TRANS X 5 ML",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90415183": {
+      "description": "ACETATO DE ATOSIBANA 7,50 MG/ML SOL DIL INJ CT FA VD TRANS X 5 ML",
+      "principioAtivo": "Acetato de atosibana",
+      "concentracao": "7,50 MG/ML",
+      "apresentacao": "SOL DIL INJ CT FA VD TRANS X 5 ML",
+      "vigente": true,
+      "startDate": "01/03/2019"
+    },
+    "90197089": {
+      "description": "SUPREFACT DEPOT 3,3 MG/MICROBAST IMPL CT SER APLIC X 2 MICROBAST",
+      "principioAtivo": "Acetato de buserelina",
+      "concentracao": "3,3 MG/MICROBAST",
+      "apresentacao": "IMPL CT SER APLIC X 2 MICROBAST",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90357892": {
+      "description": "BERK 50 MG PO LIOF SOL INJ CT 1 FA VD INC",
+      "principioAtivo": "Acetato de caspofungina",
+      "concentracao": "50 MG",
+      "apresentacao": "PO LIOF SOL INJ CT 1 FA VD INC",
+      "vigente": true,
+      "startDate": "10/04/2017"
+    },
+    "90433327": {
+      "description": "BERK 70 MG PO LIOF SOL INJ CT 1 FA VD TRANS",
+      "principioAtivo": "Acetato de caspofungina",
+      "concentracao": "70 MG",
+      "apresentacao": "PO LIOF SOL INJ CT 1 FA VD TRANS",
+      "vigente": true,
+      "startDate": "01/08/2019"
+    },
+    "90162366": {
+      "description": "CANCIDAS 50 MG PO LIOF SOL INJ CT FA VD INC",
+      "principioAtivo": "Acetato de caspofungina",
+      "concentracao": "50 MG",
+      "apresentacao": "PO LIOF SOL INJ CT FA VD INC",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90162374": {
+      "description": "CANCIDAS 70 MG PO LIOF SOL INJ CT FA VD INC",
+      "principioAtivo": "Acetato de caspofungina",
+      "concentracao": "70 MG",
+      "apresentacao": "PO LIOF SOL INJ CT FA VD INC",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90234898": {
+      "description": "CETROTIDE 0,25 MG PO LIOF INJ CT FA VD INC + 1 SER DIL + 2 AGULHAS + 2 TOALHAS",
+      "principioAtivo": "Acetato de cetrorelix",
+      "concentracao": "0,25 MG",
+      "apresentacao": "PO LIOF INJ CT FA VD INC + 1 SER DIL + 2 AGULHAS + 2 TOALHAS",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90120655": {
+      "description": "ACETATO DE CIPROTERONA 50 MG COM CT BL AL PLAS INC X 20",
+      "principioAtivo": "Acetato de ciproterona",
+      "concentracao": "50 MG",
+      "apresentacao": "COM CT BL AL PLAS INC X 20",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90209559": {
+      "description": "PROSTMAN 50 MG COM CT BL AL PLAS INC X 20",
+      "principioAtivo": "Acetato de ciproterona",
+      "concentracao": "50 MG",
+      "apresentacao": "COM CT BL AL PLAS INC X 20",
+      "vigente": true,
+      "startDate": "01/01/2016"
+    },
+    "90246713": {
+      "description": "ANDROCUR 50 MG COM CT BL AL PLAS INC X 20",
+      "principioAtivo": "Acetato de ciproterona",
+      "concentracao": "50 MG",
+      "apresentacao": "COM CT BL AL PLAS INC X 20",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90246721": {
+      "description": "ANDROCUR 100 MG COM CT BL AL PLAS INC X 20",
+      "principioAtivo": "Acetato de ciproterona",
+      "concentracao": "100 MG",
+      "apresentacao": "COM CT BL AL PLAS INC X 20",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90230280": {
+      "description": "FIRMAGON 120 MG PO LIOF INJ CT 2 FA VD INC + 2 DIL 6 ML + 2 SER + 2 AGU + 4 ADAP",
+      "principioAtivo": "Acetato de degarelix",
+      "concentracao": "120 MG",
+      "apresentacao": "PO LIOF INJ CT 2 FA VD INC + 2 DIL 6 ML + 2 SER + 2 AGU + 4 ADAP",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90230299": {
+      "description": "FIRMAGON 80 MG PO LIOF INJ CT 1 FA VD INC + 1 DIL 6 ML + 1 SER + 1 AGU + 2 ADAP",
+      "principioAtivo": "Acetato de degarelix",
+      "concentracao": "80 MG",
+      "apresentacao": "PO LIOF INJ CT 1 FA VD INC + 1 DIL 6 ML + 1 SER + 1 AGU + 2 ADAP",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90351231": {
+      "description": "FIRMAGON 80 MG PO LIOF INJ CT 1 FA VD INC + 1 DIL SER PREENCH VD TRANS X 4,2 ML + 1 ADAP + 1 AGU + ÊMBOLO",
+      "principioAtivo": "Acetato de degarelix",
+      "concentracao": "80 MG",
+      "apresentacao": "PO LIOF INJ CT 1 FA VD INC + 1 DIL SER PREENCH VD TRANS X 4,2 ML + 1 ADAP + 1 AGU + ÊMBOLO",
+      "vigente": true,
+      "startDate": "01/10/2016"
+    },
+    "90351240": {
+      "description": "FIRMAGON 120 MG PO LIOF INJ CT 2 FA VD INC + 2 DIL SER PREENCH VD TRANS X 3 ML + 2 ADAP + 2 AGU + 2 ÊMBOLOS",
+      "principioAtivo": "Acetato de degarelix",
+      "concentracao": "120 MG",
+      "apresentacao": "PO LIOF INJ CT 2 FA VD INC + 2 DIL SER PREENCH VD TRANS X 3 ML + 2 ADAP + 2 AGU + 2 ÊMBOLOS",
+      "vigente": true,
+      "startDate": "01/10/2016"
+    },
+    "90077431": {
+      "description": "FURP-DESMOPRESSINA 0,1 MG/ML SOL NAS CT FR VD AMB X 5ML + CAN",
+      "principioAtivo": "Acetato de desmopressina",
+      "concentracao": "0,1 MG/ML",
+      "apresentacao": "SOL NAS CT FR VD AMB X 5ML + CAN",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90120663": {
+      "description": "ACETATO DE DESMOPRESSINA 0,1 MG/ML SOL NAS CT FR SPR VD AMB X 2,5 ML",
+      "principioAtivo": "Acetato de desmopressina",
+      "concentracao": "0,1 MG/ML",
+      "apresentacao": "SOL NAS CT FR SPR VD AMB X 2,5 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90128540": {
+      "description": "DDAVP 0,1 MG COM CT FR PLAS OPC X 30",
+      "principioAtivo": "Acetato de desmopressina",
+      "concentracao": "0,1 MG",
+      "apresentacao": "COM CT FR PLAS OPC X 30",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90128524": {
+      "description": "DDAVP 0,1 MG/ML SOL NAS CT FR VD AMB SPR 2,5ML",
+      "principioAtivo": "Acetato de desmopressina",
+      "concentracao": "0,1 MG/ML",
+      "apresentacao": "SOL NAS CT FR VD AMB SPR 2,5ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90128532": {
+      "description": "DDAVP 0,1MG/ML SOL NAS CT FR VD AMB 2,5ML + 2 TUB",
+      "principioAtivo": "Acetato de desmopressina",
+      "concentracao": "0,1 MG/ML",
+      "apresentacao": "SOL NAS CT FR VD AMB 2,5ML + 2 TUB",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90128559": {
+      "description": "DDAVP 0,2 MG COM CT FR PLAS OPC X 30",
+      "principioAtivo": "Acetato de desmopressina",
+      "concentracao": "0,2 MG",
+      "apresentacao": "COM CT FR PLAS OPC X 30",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90128621": {
+      "description": "DDAVP 4 MCG/ML SOL INJ CT 10 AMP VD INC X 1 ML",
+      "principioAtivo": "Acetato de desmopressina",
+      "concentracao": "4 MCG/ML",
+      "apresentacao": "SOL INJ CT 10 AMP VD INC X 1 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90003497": {
+      "description": "DECADRONAL 8MG/ML SUS INJ CT FA INC X 2 ML",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "8 MG/ML",
+      "apresentacao": "SUS INJ CT FA INC X 2 ML",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90022904": {
+      "description": "LISODERME 1 MG CREM DERM CT BG AL X 10 G",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "1 MG",
+      "apresentacao": "CREM DERM CT BG AL X 10 G",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90042263": {
+      "description": "ACETATO DE DEXAMETASONA 1,0 MG/G CREM DERM CT BG AL X 10 G",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "1,0 MG/G",
+      "apresentacao": "CREM DERM CT BG AL X 10 G",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90362195": {
+      "description": "DEXAMESON 1 MG/G CREM DERM CX 50 BG AL X 10 G",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "1 MG/G",
+      "apresentacao": "CREM DERM CX 50 BG AL X 10 G",
+      "vigente": true,
+      "startDate": "10/04/2017"
+    },
+    "90051696": {
+      "description": "ACETATO DE DEXAMETASONA 1 MG/G CREM DERM CT BG AL X 10 G  ",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "1 MG/G",
+      "apresentacao": "CREM DERM CT BG AL X 10 G  ",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90077440": {
+      "description": "FURP-DEXAMETASONA 0,1 PCC CR DERM CX 50 BG AL X 10 G (EMB HOSP)",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "0,1 PCC",
+      "apresentacao": "CR DERM CX 50 BG AL X 10 G (EMB HOSP)",
+      "vigente": true,
+      "startDate": "01/06/2016"
+    },
+    "90279425": {
+      "description": "ACETATO DE DEXAMETASONA 1 MG / G CREM DERM CT BG AL X 10 G",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "1 MG / G",
+      "apresentacao": "CREM DERM CT BG AL X 10 G",
+      "vigente": true,
+      "startDate": "01/12/2013"
+    },
+    "90079094": {
+      "description": "CETADEX 1 MG/G CREM DERM CT BG AL X 10 G ",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "1 MG/G",
+      "apresentacao": "CREM DERM CT BG AL X 10 G ",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90092333": {
+      "description": "DEXAGREEN 1 MG/G CREM DERM CT BG AL X 10 G ",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "1 MG/G",
+      "apresentacao": "CREM DERM CT BG AL X 10 G ",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    },
+    "90191137": {
+      "description": "DEXAMETONAL 1 MG/G CREM DERM CT BG AL X 10 G",
+      "principioAtivo": "Acetato de dexametasona",
+      "concentracao": "1 MG/G",
+      "apresentacao": "CREM DERM CT BG AL X 10 G",
+      "vigente": true,
+      "startDate": "10/10/2012"
+    }
+  }
+}
