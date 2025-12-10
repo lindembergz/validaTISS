@@ -1,18 +1,20 @@
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { 
-  FileCheck, 
-  Shield, 
-  Zap, 
-  Clock, 
-  CheckCircle2, 
+import { useState, useEffect } from 'react';
+import {
+  FileCheck,
+  Shield,
+  Zap,
+  Clock,
+  CheckCircle2,
   ArrowRight,
   FileText,
   BarChart3,
   History,
   Building2,
   Users,
-  Lock
+  Lock,
+  X
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Header } from '@/components/layout/Header';
@@ -61,17 +63,89 @@ const guiaTypes = [
 ];
 
 export default function Index() {
+  const [showAlert, setShowAlert] = useState(false);
+
+  useEffect(() => {
+    // Verifica se o usuário já fechou o alerta antes
+    const alertClosed = localStorage.getItem('tissVersionAlertClosed');
+    if (!alertClosed) {
+      setShowAlert(true);
+    }
+  }, []);
+
+  const handleCloseAlert = () => {
+    setShowAlert(false);
+    localStorage.setItem('tissVersionAlertClosed', 'true');
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      
+
+      {/* TISS Version Alert Modal */}
+      <AnimatePresence>
+        {showAlert && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
+            onClick={handleCloseAlert}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900 rounded-2xl shadow-2xl max-w-md w-full p-8 border-2 border-blue-200 dark:border-blue-800"
+            >
+              <button
+                onClick={handleCloseAlert}
+                className="absolute top-4 right-4 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              <div className="flex flex-col items-center text-center">
+                <div className="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900 border-4 border-green-500 flex items-center justify-center mb-6">
+                  <CheckCircle2 className="w-8 h-8 text-green-600 dark:text-green-400" />
+                </div>
+
+                <h3 className="text-xl font-bold text-blue-900 dark:text-blue-100 mb-4">
+                  Versão <span className="text-blue-600 dark:text-blue-400">4.02.00</span> do padrão TISS implantado
+                </h3>
+
+                <p className="text-blue-800 dark:text-blue-200 mb-6 leading-relaxed">
+                  Valide seus arquivos na nova versão do TISS. Em caso de dúvida mande mensagem pelo{' '}
+                  <span className="font-semibold">SUPORTE</span> ou email para{' '}
+                  <a
+                    href="mailto:suporte@teksoft.info"
+                    className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
+                  >
+                    suporte@teksoft.info
+                  </a>
+                  .
+                </p>
+
+                <Button
+                  onClick={handleCloseAlert}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-6 text-lg rounded-xl shadow-lg"
+                >
+                  FECHAR
+                </Button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative overflow-hidden py-20 md:py-32">
           {/* Background Pattern */}
           <div className="absolute inset-0 bg-grid-pattern opacity-50" />
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-to-b from-tiss-blue/10 via-accent/5 to-transparent rounded-full blur-3xl" />
-          
+
           <div className="container relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -83,18 +157,18 @@ export default function Index() {
                 <Shield className="w-4 h-4" />
                 Padrão TISS 4.02.00 | ANS
               </div>
-              
+
               <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight mb-6">
                 Valide suas{' '}
                 <span className="gradient-text">Guias TISS</span>
                 {' '}em segundos
               </h1>
-              
+
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance">
-                Plataforma completa para validação de guias SADT, consulta, internação e mais. 
+                Plataforma completa para validação de guias SADT, consulta, internação e mais.
                 Em conformidade com o padrão TISS da ANS atualizado para 2025.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/validar">
                   <Button variant="hero" size="xl" className="w-full sm:w-auto">
@@ -164,7 +238,7 @@ export default function Index() {
                 <span className="gradient-text">validar guias</span>
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Uma plataforma completa com validação em tempo real, relatórios detalhados 
+                Uma plataforma completa com validação em tempo real, relatórios detalhados
                 e conformidade total com o padrão TISS da ANS.
               </p>
             </motion.div>
@@ -207,22 +281,22 @@ export default function Index() {
                 Pronto para começar?
               </h2>
               <p className="text-lg opacity-90 mb-8">
-                Comece a validar suas guias TISS gratuitamente. 
+                Comece a validar suas guias TISS gratuitamente.
                 50 validações por mês no plano gratuito.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/validar">
-                  <Button 
-                    size="xl" 
+                  <Button
+                    size="xl"
                     className="w-full sm:w-auto bg-background text-foreground hover:bg-background/90"
                   >
                     Começar Gratuitamente
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
-                <Button 
-                  variant="outline" 
-                  size="xl" 
+                <Button
+                  variant="outline"
+                  size="xl"
                   className="w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
                 >
                   Ver Planos

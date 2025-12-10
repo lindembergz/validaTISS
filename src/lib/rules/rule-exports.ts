@@ -1,5 +1,8 @@
 // Re-export table rules (Fase 3)
-export { TUSSCodeRule, UFCodeRule, ConselhoProfissionalRule } from './table-rules';
+export { TUSSCodeRule, UFCodeRule, ConselhoProfissionalRule, CBOSValidationRule } from './table-rules';
+
+// Re-export XSD structural rules
+export { CabecalhoStructureRule, SimpleDataTypesRule, EnumerationValuesRule, CardinalityRule, IdentificacaoTransacaoRule } from './xsd-structural-rules';
 
 // Re-export relationship rules (Fase 4)
 export { AuthorizationConsistencyRule, BeneficiaryConsistencyRule, ValueConsistencyRule } from './relationship-rules';

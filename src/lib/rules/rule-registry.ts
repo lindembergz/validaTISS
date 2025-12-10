@@ -39,6 +39,14 @@ import {
     AnexoObrigatorioRule,
     AnexoFormatoRule,
 } from './business-rules';
+import { CBOSValidationRule } from './table-rules';
+import {
+    CabecalhoStructureRule,
+    SimpleDataTypesRule,
+    EnumerationValuesRule,
+    CardinalityRule,
+    IdentificacaoTransacaoRule,
+} from './xsd-structural-rules';
 
 /**
  * Instância global do motor de regras
@@ -58,6 +66,13 @@ export function registerBuiltInRules(): void {
     globalRuleEngine.register(new UnknownGuiaTypeRule());
     globalRuleEngine.register(new RequiredFieldsRule());
 
+    // Regras estruturais XSD (extraídas dos schemas)
+    globalRuleEngine.register(new CabecalhoStructureRule());
+    globalRuleEngine.register(new SimpleDataTypesRule());
+    globalRuleEngine.register(new EnumerationValuesRule());
+    globalRuleEngine.register(new CardinalityRule());
+    globalRuleEngine.register(new IdentificacaoTransacaoRule());
+
     // Regras de validação de documentos (Task 2 - Fase 1)
     globalRuleEngine.register(new CPFValidationRule());
     globalRuleEngine.register(new CNPJValidationRule());
@@ -71,6 +86,7 @@ export function registerBuiltInRules(): void {
     globalRuleEngine.register(new TUSSCodeRule());
     globalRuleEngine.register(new UFCodeRule());
     globalRuleEngine.register(new ConselhoProfissionalRule());
+    globalRuleEngine.register(new CBOSValidationRule());
 
     // Regras de relacionamento (Task 2 - Fase 4)
     globalRuleEngine.register(new AuthorizationConsistencyRule());
