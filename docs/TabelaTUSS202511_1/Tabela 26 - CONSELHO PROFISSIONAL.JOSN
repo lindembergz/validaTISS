@@ -1,0 +1,99 @@
+{
+  "meta": {
+     "version": "2025.11",
+     "updatedAt": "2025-11-01",
+     "source": "Tabela 26 - Terminologia de Conselho profissional"
+        },
+  "conselhoProfissional":{
+"01": {
+"term":"Conselho Regional de Serviço Social (CRESS)",
+"startDate": "01/09/2020",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"02": {
+"term":"Conselho Regional de Enfermagem (COREN)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"03": {
+"term":"Conselho Regional de Farmácia (CRF)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"04": {
+"term":"Conselho Regional de Fonoaudiologia (CREFONO)",
+"startDate": "01/09/2020",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"05": {
+"term":"Conselho Regional de Fisioterapia e Terapia Ocupacional",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"06": {
+"term":"Conselho Regional de Medicina (CRM)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"07": {
+"term":"Conselho Regional de Nutrição (CRN)",
+"startDate": "01/09/2020",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"08": {
+"term":"Conselho Regional de Odontologia (CRO)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"09": {
+"term":"Conselho Regional de Psicologia (CRP)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"10": {
+"term":"Outros Conselhos",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"11": {
+"term":"Conselho Regional de Biologia (CRBio)",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+     },
+"12": {
+"term":"Conselho Regional de Biomedicina (CRBM)",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+     },
+"13": {
+"term":"Conselho Regional de Educação Física (CREF)",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+     },
+"14": {
+"term":"Conselho Regional de Medicina Veterinária (CRMV)",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+     },
+"15": {
+"term":"Conselho Regional de Técnicos em Radiologia (CRTR)",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+     }
+    }
+}

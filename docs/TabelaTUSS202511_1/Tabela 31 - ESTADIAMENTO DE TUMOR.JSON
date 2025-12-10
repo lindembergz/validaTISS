@@ -1,0 +1,45 @@
+{
+  "meta": {
+     "version": "2025.11",
+     "updatedAt": "2025-11-01",
+     "source": "Tabela 31 - Terminologia de Estadiamento do tumor"
+        },
+  "estadiamentoTumor":{
+"0": {
+"term":"0",
+"startDate": "10/04/2017",
+"endVig": "",
+"endImpl": "09/07/2017"
+     },
+"1": {
+"term":"I",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"2": {
+"term":"II",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3": {
+"term":"III",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"4": {
+"term":"IV",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"5": {
+"term":"Não se aplica",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     }
+    }
+}

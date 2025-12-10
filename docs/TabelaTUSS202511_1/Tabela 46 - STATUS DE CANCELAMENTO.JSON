@@ -1,0 +1,45 @@
+{
+"meta": {
+"version": "2025.11",
+"updatedAt": "2025-11-01",
+"source": "Tabela 46 - Terminologia de Status do cancelamento"
+},
+"statusCancelamento":{
+"1": {
+"term":"Cancelado com sucesso",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"2": {
+"term":"Não cancelado",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"3": {
+"term":"Guia inexistente",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"4": {
+"term":"Em processamento",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"5": {
+"term":"Lote inexistente",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"6": {
+"term":"Protocolo inexistente",
+"startDate": "01/10/2022",
+"endVig": "",
+"endImpl": "30/04/2023"
+}
+}
+}

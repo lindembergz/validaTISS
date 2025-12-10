@@ -39,6 +39,8 @@ import {
     AnexoObrigatorioRule,
     AnexoFormatoRule,
 } from './business-rules';
+import { ValorCalculoRule } from './valor-calculo-rule';
+import { AnexoObrigatorioPorProcedimentoRule } from './anexo-obrigatorio-procedimento-rule';
 import { CBOSValidationRule } from './table-rules';
 import {
     CabecalhoStructureRule,
@@ -92,6 +94,7 @@ export function registerBuiltInRules(): void {
     globalRuleEngine.register(new AuthorizationConsistencyRule());
     globalRuleEngine.register(new BeneficiaryConsistencyRule());
     globalRuleEngine.register(new ValueConsistencyRule());
+    globalRuleEngine.register(new ValorCalculoRule()); // Nova regra de cálculo de valores
 
     // Regras de negócio (Task 2 - Fase 5)
     globalRuleEngine.register(new RNAtendimentoRule());
@@ -118,6 +121,7 @@ export function registerBuiltInRules(): void {
     globalRuleEngine.register(new DataAutorizacaoVencidaRule());
     globalRuleEngine.register(new AnexoObrigatorioRule());
     globalRuleEngine.register(new AnexoFormatoRule());
+    globalRuleEngine.register(new AnexoObrigatorioPorProcedimentoRule()); // Nova regra de anexos por procedimento
 
     const stats = globalRuleEngine.getStats();
     console.log(`✓ ${stats.total} regras registradas (${stats.enabled} habilitadas)`);

@@ -1,0 +1,21 @@
+{
+"meta": {
+"version": "2025.11",
+"updatedAt": "2025-11-01",
+"source": "Tabela 23 - Terminologia de caráter do atendimento"
+},
+"caraterAtendimento":{
+"1": {
+"term":"Eletivo",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"2": {
+"term":"Urgência/Emergência",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+}
+}
+}

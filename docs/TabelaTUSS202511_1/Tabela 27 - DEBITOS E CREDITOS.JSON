@@ -1,0 +1,63 @@
+{
+  "meta": {
+     "version": "2025.11",
+     "updatedAt": "2025-11-01",
+     "source": "Tabela 27 - Terminologia de Débitos e créditos"
+        },
+  "debitosCreditos":{
+"01": {
+"term":"Imposto de renda retido na fonte (IRRF)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"02": {
+"term":"Imposto sobre serviços (ISS)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"03": {
+"term":"Instituto nacional de seguridade social (INSS)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"04": {
+"term":"Programa de integração social (PIS)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"05": {
+"term":"Contribuição sobre o financiamento da seguridade social (COFINS)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"06": {
+"term":"Contribuição sobre o lucro liquido (CSLL)",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"07": {
+"term":"Descontos financeiros",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"08": {
+"term":"Ajuste de pagamento anterior",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"09": {
+"term":"Determinação judicial",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     }
+    }
+}

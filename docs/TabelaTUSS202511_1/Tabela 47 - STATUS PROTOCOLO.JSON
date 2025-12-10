@@ -1,0 +1,69 @@
+{
+"meta": {
+"version": "2025.11",
+"updatedAt": "2025-11-01",
+"source": "Tabela 47 - Terminologia de Status do protocolo"
+},
+"statusProtocolo":{
+"1": {
+"term":"Recebido",
+"startDate": "10/11/2005",
+"endVig": "",
+"endImpl": "10/11/2005"
+},
+"2": {
+"term":"Em análise",
+"startDate": "10/11/2005",
+"endVig": "",
+"endImpl": "10/11/2005"
+},
+"3": {
+"term":"Liberado para pagamento",
+"startDate": "10/11/2005",
+"endVig": "",
+"endImpl": "10/11/2005"
+},
+"4": {
+"term":"Encerrado sem pagamento",
+"startDate": "10/11/2005",
+"endVig": "",
+"endImpl": "10/11/2005"
+},
+"5": {
+"term":"Analisado e aguardando liberação para o pagamento",
+"startDate": "10/11/2005",
+"endVig": "",
+"endImpl": "10/11/2005"
+},
+"6": {
+"term":"Pagamento efetuado",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"7": {
+"term":"Não localizado",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"8": {
+"term":"Aguardando informação complementar",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"9": {
+"term":"Cancelado",
+"startDate": "01/10/2022",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"10": {
+"term":"Bloqueio judicial - prestador",
+"startDate": "01/06/2025",
+"endVig": "",
+"endImpl": "30/11/2025"
+}
+}
+}

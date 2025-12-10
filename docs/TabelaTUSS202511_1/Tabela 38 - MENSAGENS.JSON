@@ -1,0 +1,2683 @@
+{
+  "meta": {
+     "version": "2025.11",
+     "updatedAt": "2025-11-01",
+     "source": "Tabela 38 - Terminologia de mensagens (glosas, negativas e outras)"
+        },
+  "mensagens":{
+"1001": {
+"term":"NÚMERO DA CARTEIRA INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1002": {
+"term":"NÚMERO DO CARTÃO NACIONAL DE SAÚDE INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1003": {
+"term":"A ADMISSÃO DO BENEFICIÁRIO NO PRESTADOR OCORREU ANTES DA INCLUSÃO DO BENEFICIÁRIO NA OPERADORA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1004": {
+"term":"SOLICITAÇÃO ANTERIOR À INCLUSÃO DO BENEFICIÁRIO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1005": {
+"term":"ATENDIMENTO ANTERIOR À INCLUSÃO DO BENEFICIÁRIO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1006": {
+"term":"ATENDIMENTO APÓS O DESLIGAMENTO DO BENEFICIÁRIO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1007": {
+"term":"ATENDIMENTO DENTRO DA CARÊNCIA DO BENEFICIÁRIO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1008": {
+"term":"ASSINATURA DIVERGENTE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1009": {
+"term":"BENEFICIÁRIO COM PAGAMENTO EM ABERTO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1010": {
+"term":"ASSINATURA DO TITULAR / RESPONSÁVEL INEXISTENTE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1011": {
+"term":"IDENTIFICAÇÃO DO BENEFICIÁRIO NÃO CONSISTENTE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1012": {
+"term":"SERVIÇO PROFISSIONAL HOSPITALAR NÃO É COBERTO PELO PLANO DO BENEFICIÁRIO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1013": {
+"term":"CADASTRO DO BENEFICIÁRIO COM PROBLEMAS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1014": {
+"term":"BENEFICIÁRIO COM DATA DE EXCLUSÃO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1015": {
+"term":"IDADE DO BENEFICIÁRIO ACIMA DADE LIMITE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1016": {
+"term":"BENEFICIÁRIO COM ATENDIMENTO SUSPENSO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1018": {
+"term":"EMPRESA DO BENEFICIÁRIO SUSPENSA / EXCLUÍDA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1019": {
+"term":"FAMÍLIA DO BENEFICIÁRIO COM ATENDIMENTO SUSPENSO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1020": {
+"term":"VIA DE CARTÃO DO BENEFICIÁRIO CANCELADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1021": {
+"term":"VIA DE CARTÃO DO BENEFICIÁRIO NÃO LIBERADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1022": {
+"term":"VIA DE CARTÃO DO BENEFICIÁRIO NÃO COMPATÍVEL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1023": {
+"term":"NOME DO TITULAR INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1024": {
+"term":"PLANO NÃO EXISTENTE",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1025": {
+"term":"BENEFICIÁRIO NÃO POSSUI COBERTURA PARA ASSISTÊNCIA ODONTOLÓGICA",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1101": {
+"term":"QUANTIDADE DE GUIAS INFORMADAS NO PROTOCOLO DIFERENTE DAS CADASTRADAS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1103": {
+"term":"PROTOCOLO NÃO É DE REAPRESENTAÇÃO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1104": {
+"term":"VALOR TOTAL DO PROTOCOLO DIFERENTE DO VALOR TOTAL DAS GUIAS",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1201": {
+"term":"ATENDIMENTO FORA DA VIGÊNCIA DO CONTRATO COM O CREDENCIADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1202": {
+"term":"NÚMERO DO CNES INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1203": {
+"term":"CÓDIGO PRESTADOR INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1204": {
+"term":"ADMISSÃO ANTERIOR À INCLUSÃO DO CREDENCIADO NA REDE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1205": {
+"term":"ADMISSÃO APÓS O DESLIGAMENTO DO CREDENCIADO DA REDE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1206": {
+"term":"CPF / CNPJ INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1207": {
+"term":"CREDENCIADO NÃO PERTENCE À REDE CREDENCIADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1208": {
+"term":"SOLICITAÇÃO ANTERIOR À INCLUSÃO DO CREDENCIADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1209": {
+"term":"SOLICITAÇÃO APÓS O DESLIGAMENTO DO CREDENCIADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1210": {
+"term":"SOLICITANTE CREDENCIADO NÃO CADASTRADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1211": {
+"term":"ASSINATURA / CARIMBO DO CREDENCIADO INEXISTENTE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1212": {
+"term":"ATENDIMENTO / REFERÊNCIA FORA DA VIGÊNCIA DO CONTRATO DO PRESTADOR",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1213": {
+"term":"CBO (ESPECIALIDADE) INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1214": {
+"term":"CREDENCIADO NÃO HABILITADO A REALIZAR O PROCEDIMENTO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1215": {
+"term":"CREDENCIADO FORA DA ABRANGÊNCIA GEOGRÁFICA DO PLANO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1216": {
+"term":"ESPECIALIDADE NÃO CADASTRADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1217": {
+"term":"ESPECIALIDADE NÃO CADASTRADA PARA O PRESTADOR",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1218": {
+"term":"CÓDIGO DE PRESTADOR INCOMPATÍVEL COM PROCEDIMENTO / EXAME COBRADO",
+"startDate": "01/05/2014",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1302": {
+"term":"CÓDIGO TIPO GUIA PRINCIPAL E NÚMERO GUIAS INCOMPATÍVEIS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1303": {
+"term":"NÃO EXISTE O NÚMERO GUIA PRINCIPAL INFORMADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1304": {
+"term":"COBRANÇA EM GUIA INDEVIDA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1305": {
+"term":"ITEM PAGO EM OUTRA GUIA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1306": {
+"term":"NÃO EXISTE NÚMERO-GUIA PRINCIPAL E/OU CÓDIGO-GUIA PRINCIPAL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1307": {
+"term":"NÚMERO DA GUIA INVALIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1308": {
+"term":"GUIA JÁ APRESENTADA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1309": {
+"term":"PROCEDIMENTO CONTRATADO NÃO ESTÁ DE ACORDO COM O TIPO DE GUIA UTILIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1310": {
+"term":"SERVIÇO DO TIPO CIRÚRGICO É INVASIVO. EQUIPE MÉDICA NÃO INFORMADA NA GUIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1311": {
+"term":"PRESTADOR EXECUTANTE NÃO INFORMADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1312": {
+"term":"PRESTADOR CONTRATADO NÃO INFORMADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1313": {
+"term":"GUIA COM RASURA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1314": {
+"term":"GUIA SEM ASSINATURA E/OU CARIMBO DO CREDENCIADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1315": {
+"term":"GUIA SEM DATA DO ATO CIRÚRGICO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1316": {
+"term":"GUIA COM LOCAL DE ATENDIMENTO PREENCHIDO INCORRETAMENTE.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1317": {
+"term":"GUIA SEM DATA DO ATENDIMENTO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1318": {
+"term":"GUIA COM CÓDIGO DE SERVIÇO PREENCHIDO INCORRETAMENTE.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1319": {
+"term":"GUIA SEM ASSINATURA DO ASSISTIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1320": {
+"term":"IDENTIFICAÇÃO DO ASSISTIDO INCOMPLETA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1321": {
+"term":"VALIDADE DA GUIA EXPIRADA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1322": {
+"term":"COMPROVANTE PRESENCIAL OU GTO NÃO ENVIADO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1323": {
+"term":"DATA PREENCHIDA INCORRETAMENTE",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1401": {
+"term":"ACOMODAÇÃO NÃO AUTORIZADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1402": {
+"term":"PROCEDIMENTO NÃO AUTORIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1403": {
+"term":"NÃO EXISTE INFORMAÇÃO SOBRE A SENHA DE AUTORIZAÇÃO DO PROCEDIMENTO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1404": {
+"term":"NÃO EXISTE GUIA DE AUTORIZAÇÃO RELACIONADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1405": {
+"term":"DATA DE VALIDADE DA SENHA É ANTERIOR A DATA DO ATENDIMENTO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1406": {
+"term":"NÚMERO DA SENHA INFORMADO DIFERENTE DO LIBERADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1407": {
+"term":"SERVIÇO SOLICITADO NÃO POSSUI COBERTURA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1408": {
+"term":"QUANTIDADE SERVIÇO SOLICITADA ACIMA DA AUTORIZADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1409": {
+"term":"QUANTIDADE SERVIÇO SOLICITADA ACIMA COBERTA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1410": {
+"term":"SERVIÇO SOLICITADO EM CARÊNCIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1411": {
+"term":"SOLICITANTE NÃO INFORMADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1412": {
+"term":"PROBLEMAS NO SISTEMA AUTORIZADOR",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1413": {
+"term":"ACOMODAÇÃO NÃO POSSUI COBERTURA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1414": {
+"term":"DATA DE VALIDADE DA SENHA EXPIRADA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1415": {
+"term":"PROCEDIMENTO NÃO AUTORIZADO PARA O BENEFICIÁRIO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1416": {
+"term":"SOLICITANTE NÃO CADASTRADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1417": {
+"term":"SOLICITANTE NÃO HABILITADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1418": {
+"term":"SOLICITANTE SUSPENSO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1419": {
+"term":"SERVIÇO SOLICITADO JÁ AUTORIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1420": {
+"term":"SERVIÇO SOLICITADO FORA DA COBERTURA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1421": {
+"term":"SERVIÇO SOLICITADO É DE PRÉ-EXISTÊNCIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1422": {
+"term":"ESPECIALIDADE NÃO CADASTRADA PARA O SOLICITANTE",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1423": {
+"term":"QUANTIDADE SOLICITADA ACIMA DA QUANTIDADE PERMITIDA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1424": {
+"term":"QUANTIDADE AUTORIZADA ACIMA DA QUANTIDADE PERMITIDA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1425": {
+"term":"NECESSITA PRÉ-AUTORIZAÇÃO DA EMPRESA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1426": {
+"term":"NÃO AUTORIZADO PELA AUDITORIA",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"1427": {
+"term":"NECESSIDADE DE AUDITORIA MÉDICA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1428": {
+"term":"FALTA DE AUTORIZAÇÃO DA EMPRESA DE CONECTIVIDADE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1429": {
+"term":"CBO-S (ESPECIALIDADE) NÃO AUTORIZADO A REALIZAR O SERVIÇO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1430": {
+"term":"PROCEDIMENTO ODONTOLÓGICO NÃO AUTORIZADO",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"1431": {
+"term":"PROCEDIMENTO NÃO AUTORIZADO NA FACE SOLICITADA",
+"startDate": "11/05/2007",
+"endVig": "",
+"endImpl": "11/05/2007"
+     },
+"1432": {
+"term":"PROCEDIMENTO NÃO AUTORIZADO PARA DENTE/REGIÃO SOLICITADA",
+"startDate": "11/05/2007",
+"endVig": "",
+"endImpl": "11/05/2007"
+     },
+"1433": {
+"term":"PROCEDIMENTO NÃO AUTORIZADO, DENTE AUSENTE",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"1434": {
+"term":"COBRANÇA DE CONTA DE CTI NEONATAL NA SENHA DO PARTO",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1435": {
+"term":"VIGÊNCIA DO ACORDO POSTERIOR À DATA DE REALIZAÇÃO DO PROCEDIMENTO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1436": {
+"term":"CANCELAMENTO DO ACORDO ANTERIOR À DATA DE REALIZAÇÃO DO PROCEDIMENTO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1437": {
+"term":"SENHA DE AUTORIZAÇÃO CANCELADA",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1438": {
+"term":"PROCEDIMENTO SOLICITADO NÃO AUTORIZADO POR NÃO ATENDER A DIRETRIZ DE UTILIZAÇÃO (DUT) DO ROL DE PROCEDIMENTOS E EVENTOS EM SAÚDE DA ANS",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1501": {
+"term":"TEMPO DE EVOLUÇÃO DA DOENÇA INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1502": {
+"term":"TIPO DE DOENÇA INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1503": {
+"term":"INDICADOR DE ACIDENTE INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1504": {
+"term":"CARÁTER DE INTERNAÇÃO INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1506": {
+"term":"TIPO DE INTERNAÇÃO INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1507": {
+"term":"URGÊNCIA/EMERGÊNCIA NÃO APLICÁVEL",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"1508": {
+"term":"CÓDIGO CID NÃO INFORMADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1509": {
+"term":"CÓDIGO CID INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1601": {
+"term":"REINCIDÊNCIA NO ATENDIMENTO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1602": {
+"term":"TIPO DE ATENDIMENTO INVÁLIDO OU NÃO INFORMADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1603": {
+"term":"TIPO DE CONSULTA INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1604": {
+"term":"TIPO DE SAÍDA INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1606": {
+"term":"FINAL DA INTERVENÇÃO ANTERIOR AO INÍCIO DA INTERVENÇÃO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1607": {
+"term":"ALTA HOSPITALAR ANTERIOR AO FINAL DA INTERVENÇÃO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1608": {
+"term":"ALTA ANTERIOR À DATA DE INTERNAÇÃO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1610": {
+"term":"ÓBITO MULHER INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1611": {
+"term":"INTERVENÇÃO ANTERIOR À INTERNAÇÃO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1612": {
+"term":"SERVIÇO NÃO PODE SER REALIZADO NO LOCAL ESPECIFICADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1613": {
+"term":"CONSULTA NÃO AUTORIZADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+},
+"1614": {
+"term":"SERVIÇO AMBULATORIAL NÃO AUTORIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1615": {
+"term":"INTERNAÇÃO NÃO AUTORIZADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1701": {
+"term":"COBRANÇA FORA DO PRAZO DE VALIDADE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1702": {
+"term":"COBRANÇA DE PROCEDIMENTO EM DUPLICIDADE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1703": {
+"term":"HORÁRIO DO ATENDIMENTO NÃO ESTÁ NA FAIXA DE URGÊNCIA/EMERGÊNCIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1704": {
+"term":"VALOR COBRADO SUPERIOR AO ACORDADO EM PACOTE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1705": {
+"term":"VALOR APRESENTADO A MAIOR",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1706": {
+"term":"VALOR APRESENTADO A MENOR",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1707": {
+"term":"NÃO EXISTE INFORMAÇÃO SOBRE A TABELA QUE SERÁ UTILIZADA NA VALORAÇÃO. VERIFIQUE O CONTRATO DO PRESTADOR",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1708": {
+"term":"NÃO EXISTE VALOR PARA O PROCEDIMENTO REALIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1709": {
+"term":"FALTA PRESCRIÇÃO MÉDICA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1710": {
+"term":"FALTA VISTO DA ENFERMAGEM",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1711": {
+"term":"PROCEDIMENTO PERTENCE A UM PACOTE ACORDADO E JÁ COBRADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1712": {
+"term":"ASSINATURA DO MÉDICO RESPONSÁVEL PELO EXAME INEXISTENTE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1713": {
+"term":"FATURAMENTO INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1714": {
+"term":"VALOR DO SERVIÇO SUPERIOR AO VALOR DE TABELA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1715": {
+"term":"VALOR DO SERVIÇO INFERIOR AO VALOR DE TABELA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1716": {
+"term":"PERCENTUAL DE REDUÇÃO/ACRESCIMO FORA DOS VALORES DEFINIDOS EM TABELA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1717": {
+"term":"PAGO CONFORME RELATÓRIO DE AUDITORIA EXTERNA - CONTA INICIAL",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1718": {
+"term":"REANALISE NEGADA, PAGO CONFORME RELATÓRIO DE AUDITORIA",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1719": {
+"term":"REANÁLISE NEGADA. ANÁLISE CONFORME TABELA ACORDADA",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1720": {
+"term":"LIBERADOS 150% DE VIDEO, SEM COBERTURA PARA ADICIONAL DE ACOMODAÇÃO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1721": {
+"term":"CÓDIGO COBRADO SUBSTITUIDO PELO CÓDIGO PAGO",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1722": {
+"term":"PAGO CONFORME NEGOCIAÇÃO",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1723": {
+"term":"ADICIONAL DE URGÊNCIA NÃO PREVISTO PARA ATENDIMENTO CLÍNICO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1724": {
+"term":"VISITA MÉDICA COBRADA PELA EQUIPE CIRÚRGICA INCLUÍDA NO PERÍODO DE 10 DIAS APÓS REALIZAÇÃO DO PROCEDIMENTO CIRÚRGICO",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1725": {
+"term":"VALOR PAGO A MAIOR REFERENTE À TAXA ADMINISTRATIVA",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1726": {
+"term":"VALOR APRESENTADO A MAIOR - PLANO INDIVIDUAL",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1727": {
+"term":"PAGO VALOR COMPATÍVEL COM O PROCEDIMENTO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1728": {
+"term":"COBRANÇA DE MATERIAL INCLUSO NO PROCEDIMENTO / EXAME REALIZADO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1729": {
+"term":"COBRANÇA DE MATERIAL COM VALOR ACIMA DO PERMITIDO PARA PROCEDIMENTO/EXAME REALIZADO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1730": {
+"term":"FILME INCLUSO NO EXAME REALIZADO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1731": {
+"term":"TAXA INCOMPATÍVEL PARA ATENDIMENTO AMBULATORIAL",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1732": {
+"term":"QUIMIOTERAPIA (QT) COM DATA DE EVENTO DIVERGENTE DA LIBERADA",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1733": {
+"term":"RECUPERAÇÃO DE VALORES POR PAGAMENTO INDEVIDO",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1734": {
+"term":"COBRADA COM A ABERTA, PAGO O PACOTE CONFORME NEGOCIAÇÃO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1735": {
+"term":"COBRANÇA DE PACOTE NÃO NEGOCIADO COM O PRESTADOR",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1736": {
+"term":"CONTA AGUARDANDO NEGOCIAÇÃO PARA PAGAMENTO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1737": {
+"term":"DIFFERENÇA DEVE SER COBRADA DO BENEFICIÁRIO PELO PRESTADOR COMO FRANQUIA",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1738": {
+"term":"DOCUMENTO FISCAL NÃO ENVIADO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1739": {
+"term":"DUPUCIDADE DE CONTA DEVIDO A PERÍODO COBRADO JÁ EFETUADO EM OUTRA PARCIAL",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1740": {
+"term":"ESTORNO DO VALOR DE PROCEDIMENTO PAGO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1741": {
+"term":"HONORÁRIO OU PROCEDIMENTO JÁ PAGO A OUTRO PRESTADOR",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1742": {
+"term":"HONORÁRIO OU PROCEDIMENTO JÁ PAGO POR REEMBOLSO AO BENEFICIÁRIO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1743": {
+"term":"NÃO HA NEGOCIAÇÃO PARA COBRANÇA DO KIT, DISCRIMINAR POR ITENS",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1744": {
+"term":"NEGOCIAÇÃO DIFERENCIADA DEVIDO A LIMINAR",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1745": {
+"term":"PAGAMENTO DA EQUIPE CONFORME RELATÓRIO DO CIRURGIÃO",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1746": {
+"term":"PERCENTUAL DE ACRÉSCIMO DIFERENTE DO NEGOCIADO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1747": {
+"term":"PLANO DO BENEFICIÁRIO E O TIPO DE ACOMODAÇÃO NÃO PERMITEM ACRÉSCIMO DE HONORÁRIOS",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1748": {
+"term":"PROCEDIMENTO NÃO CARACTERIZA URGÊNCIA/EMERGENCIA",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1749": {
+"term":"RELATÓRIO DE AUDITORIA NÃO ENVIADO NA CONTA.",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1801": {
+"term":"PROCEDIMENTO INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1802": {
+"term":"PROCEDIMENTO INCOMPATÍVEL COM O SEXO DO BENEFICIÁRIO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1803": {
+"term":"IDADE DO BENEFICIÁRIO INCOMPATÍVEL COM O PROCEDIMENTO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1804": {
+"term":"NÚMERO DE DIAS LIBERADOS / SESSÕES AUTORIZADAS NÃO INFORMADAS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1805": {
+"term":"VALOR TOTAL DO PROCEDIMENTO DIFERENTE DO VALOR PROCESSADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1806": {
+"term":"QUANTIDADE DE PROCEDIMENTO DEVE SER MAIOR QUE ZERO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1807": {
+"term":"PROCEDIMENTOS MÉDICOS DUPLICADOS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1808": {
+"term":"PROCEDIMENTO NÃO CONFORME COM CID",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1809": {
+"term":"COBRANÇA DE PROCEDIMENTO NÃO EXECUTADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1810": {
+"term":"COBRANÇA DE PROCEDIMENTO NÃO SOLICITADO PELO MÉDICO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1811": {
+"term":"PROCEDIMENTO SEM REGISTRO DE EXECUÇÃO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1812": {
+"term":"COBRANÇA DE PROCEDIMENTO NÃO CORRELACIONADO AO RELATÓRIO ESPECÍFICO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1813": {
+"term":"COBRANÇA DE PROCEDIMENTO SEM JUSTIFICATIVA PARA REALIZAÇÃO OU COM JUSTIFICATIVA INSUFICIENTE.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1814": {
+"term":"COBRANÇA DE PROCEDIMENTO COM DATA DE AUTORIZAÇÃO POSTERIOR À DO ATENDIMENTO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1815": {
+"term":"COBRANÇA DE PROCEDIMENTO COM AUSÊNCIA DE RESULTADO OU LAUDO TÉCNICO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1816": {
+"term":"COBRANÇA DE PROCEDIMENTO EM QUANTIDADE INCOMPATÍVEL COM O PROCEDIMENTO/EVOLUÇÃO CLÍNICA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1817": {
+"term":"COBRANÇA DE PROCEDIMENTO INCLUSO NO PROCEDIMENTO PRINCIPAL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1818": {
+"term":"COBRANÇA DO PACOTE EXIGE AUTORIZAÇÃO PRÉVIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1819": {
+"term":"COBRANÇA DE PROCEDIMENTO COM HISTÓRIA CLÍNICA/HIPÓTESE DIAGNÓSTICA NÃO COMPATÍVEL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1820": {
+"term":"COBRANÇA DE PROCEDIMENTO EM QUANTIDADE ACIMA DA MÁXIMA PERMITIDA/AUTORIZADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1821": {
+"term":"COBRANÇA DE PROCEDIMENTO NÃO COMPATÍVEL COM A IDADE.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1822": {
+"term":"COBRANÇA DE PROCEDIMENTO COM AUSÊNCIA DE RESULTADO OU LAUDO TÉCNICO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1823": {
+"term":"PROCEDIMENTO REALIZADO PELO MESMO PROFISSIONAL, NA MESMA ESPECIALIDADE, EM PRAZO INFERIOR AO ESTIPULADO SEM JUSTIFICATIVA ADEQUADA",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1824": {
+"term":"PROCEDIMENTO COBRADO NÃO CORRESPONDE AO EXAME EXECUTADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1825": {
+"term":"COBRANÇA DE PROCEDIMENTO AMBULATORIAL COM DATA DE AUTORIZAÇÃO POSTERIOR À DO ATENDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1826": {
+"term":"VIAS DE ACESSO DOS PROCEDIMENTOS COBRADOS NÃO ESTÃO PREVISTAS NA LISTAGEM DE PROCEDIMENTOS MÚLTIPLOS.",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1827": {
+"term":"COBRANÇA DE OUTRO PROCEDIMENTO EM OUTRA GUIA, NA MESMA DATA, PELO MESMO PROFISSIONAL COM MESMO GRAU DE PARTICIPAÇÃO - LIBERADO VALOR REFERENTE À VIA DE ACESSO DO PROCEDIMENTO SECUNDÁRIO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1828": {
+"term":"ADICIONAL DE URGÊNCIA NÃO PREVISTO PARA PROCEDIMENTO CIRÚRGICO ELETIVO.",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1829": {
+"term":"ADICIONAL DE VÍDEO NÃO PREVISTO PARA O PROCEDIMENTO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1830": {
+"term":"COBRANÇA DE PROCEDIMENTO SEM INFORMAÇÃO DAS DATAS DE ATENDIMENTO-VISITA, PLANTÃO, INTENSIVISTA, AVALIAÇÃO ENTERAL/PARENTERAL",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1831": {
+"term":"LAUDO DO EXAME ENVIADO NÃO JUSTIFICA A COBRANÇA DO PROCEDIMENTO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1832": {
+"term":"PROCEDIMENTO NÃO PERMITE COBRANÇA DE AUXILIAR DE ANESTESISTA",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1833": {
+"term":"PROCEDIMENTO COBRADO NÃO PERMITE ACRÉSCIMO DE ACOMODAÇÃO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1834": {
+"term":"PORTE ANESTÉSICO COBRADO INCOMPATÍVEL COM O PORTE DO PROCEDIMENTO REALIZADO",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1835": {
+"term":"\"ANALGESIA POR DIA SUBSEQUENTE\" NÃO JUSTIFICADA EM RELATÓRIO MÉDICO, PARA O PROCEDIMENTO REALIZADO E/OU DATA DO ATENDIMENTO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1836": {
+"term":"\"ANALGESIA POR DIA SUBSEQUENTE\" INCOMPATÍVEL COM A VIA DE ADMINISTRAÇÃO DO MEDICAMENTO - VO OU IV PERIFÉRICA - SENDO LIBERADA VISITA HOSPITALAR",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1837": {
+"term":"NÃO CABE PAGAMENTO DO HONORÁRIO INTEGRAL POR SER VIA DE ACESSO CIRÚRGICO DIFERENTE",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1838": {
+"term":"GRAU DE PARTICIPAÇÃO INFORMADO INCOMPATÍVEL COM EVENTO COBRADO.",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1839": {
+"term":"NECESSÁRIO ENVIO DO RESULTADO DO EXAME ANATOMOPATOLÓGICO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1840": {
+"term":"PROCEDIMENTO EXECUTADO ANTES DA AUTORIZAÇÃO",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"1901": {
+"term":"ACOMODAÇÃO INVÁLIDA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1902": {
+"term":"ACOMODAÇÃO INFORMADA NÃO ESTÁ DE ACORDO COM ACOMODAÇÃO CONTRATADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1903": {
+"term":"PERMANÊNCIA HOSPITALAR INCOMPATÍVEL COM A EVOLUÇÃO CLÍNICA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1904": {
+"term":"PERMANÊNCIA HOSPITALAR INCOMPATÍVEL COM O PROCEDIMENTO AUTORIZADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1905": {
+"term":"QUANTIDADE DE DIÁRIAS DEVE SER MAIOR QUE ZERO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1906": {
+"term":"ACOMODAÇÃO NÃO INFORMADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1907": {
+"term":"QUANTIDADE UTI NÃO PREVISTA PARA PROCEDIMENTO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1908": {
+"term":"USUÁRIO NÃO POSSUI COBERTURA DE UTI",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1909": {
+"term":"EVOLUÇÃO CLÍNICA NÃO COMPATÍVEL COM A PERMANÊNCIA EM UTI.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1910": {
+"term":"COBRANÇA DE DIÁRIAS EM LOCAIS DE ACOMODAÇÕES DIFERENTES, NO MESMO DIA",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1911": {
+"term":"PERMANÊNCIA HOSPITALAR PARA INVESTIGAÇÃO INJUSTIFICADA",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"1912": {
+"term":"CÓDIGO DE DIÁRIA INCOMPATÍVEL COM O LOCAL DE ATENDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1913": {
+"term":"COBRANÇA DE DIÁRIAS DE UTI INCOMPATÍVEL COM DIAGNÓSTICO E EVOLUÇÃO CLÍNICA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1914": {
+"term":"COBRANÇA DE DIÁRIA EM QUANTIDADE INCOMPATÍVEL COM A PERMANÊNCIA HOSPITALAR.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1915": {
+"term":"MUDANÇA DE ACOMODAÇÃO SEM COMUNICAÇÃO AO PACIENTE, FAMILIAR OU ACOMPANHANTE, OU SEM SOLICITAÇÃO DESTES.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"1916": {
+"term":"COBRANÇA DE DIÁRIAS DE UTI INCOMPATÍVEL COM DIAGNÓSTICO E EVOLUÇÃO CLÍNICA.",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"1917": {
+"term":"FALTA PRORROGAÇÃO PARA QUANTIDADE DE DIÁRIAS COBRADAS",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"1918": {
+"term":"PLANO DO BENEFICIÁRIO NÃO CONTEMPLA DIÁRIA DE ACOMPANHANTE",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"2001": {
+"term":"MATERIAL INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2002": {
+"term":"MATERIAL SEM COBERTURA PARA ATENDIMENTO AMBULATORIAL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2003": {
+"term":"MATERIAL NÃO ESPECIFICADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2004": {
+"term":"MATERIAL SEM NOTA FISCAL DO FORNECEDOR",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2005": {
+"term":"QUANTIDADE DE MATERIAL DEVE SER MAIOR QUE ZERO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2006": {
+"term":"MATERIAL INFORMADO NÃO COBERTO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2007": {
+"term":"COBRANÇA DE MATERIAL EM QUANTIDADE INCOMPATÍVEL COM A PERMANÊNCIA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2008": {
+"term":"COBRANÇA DE MATERIAL EM QUANTIDADES INCOMPATÍVEIS COM O PROCEDIMENTO REALIZADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2009": {
+"term":"QUANTIDADE DE MATERIAL SUPERIOR A QUANTIDADE COBERTA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2010": {
+"term":"COBRANÇA DE MATERIAIS INCLUSOS NAS TAXAS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2011": {
+"term":"COBRANÇA DE MATERIAL INCLUSO NO PACOTE NEGOCIADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2012": {
+"term":"COBRANÇA DE MATERIAL INCOMPATÍVEL COM O RELATÓRIO TÉCNICO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2013": {
+"term":"COBRANÇA DE MATERIAL EM PERMANÊNCIA HOSPITALAR NÃO AUTORIZADA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2014": {
+"term":"COBRANÇA DE MATERIAL NÃO UTILIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2015": {
+"term":"MATERIAL NÃO AUTORIZADO",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2101": {
+"term":"MEDICAMENTO INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2102": {
+"term":"MEDICAMENTO SEM COBERTURA PARA ATENDIMENTO AMBULATORIAL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2103": {
+"term":"MEDICAMENTO NÃO ESPECIFICADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2104": {
+"term":"MEDICAMENTO SEM NOTA FISCAL DO FORNECEDOR",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2105": {
+"term":"QUANTIDADE DE MEDICAMENTOS DEVE SER MAIOR QUE ZERO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2106": {
+"term":"MEDICAMENTO INFORMADO NÃO COBERTO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2107": {
+"term":"COBRANÇA DE MEDICAMENTO EM QUANTIDADE INCOMPATÍVEL COM A PERMANÊNCIA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2108": {
+"term":"COBRANÇA DE MEDICAMENTO EM QUANTIDADES INCOMPATÍVEIS COM O PROCEDIMENTO REALIZADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2109": {
+"term":"QUANTIDADE DE MEDICAMENTO SUPERIOR A QUANTIDADE COBERTA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2110": {
+"term":"COBRANÇA DE MEDICAMENTO INCLUSOS NAS TAXAS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2111": {
+"term":"COBRANÇA DE MEDICAMENTO INCLUSO NO PACOTE NEGOCIADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2112": {
+"term":"COBRANÇA DE MEDICAMENTO INCOMPATÍVEL COM O RELATÓRIO TÉCNICO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2113": {
+"term":"COBRANÇA DE MEDICAMENTO EM PERMANÊNCIA HOSPITALAR NÃO AUTORIZADA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2114": {
+"term":"COBRANÇA DE MEDICAMENTO NÃO UTILIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2115": {
+"term":"MEDICAMENTO NÃO AUTORIZADO",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2201": {
+"term":"OPME INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2202": {
+"term":"OPME SEM COBERTURA PARA ATENDIMENTO AMBULATORIAL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2203": {
+"term":"OPME SEM NOTA FISCAL DO FORNECEDOR",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2204": {
+"term":"QUANTIDADE DE OPME DEVE SER MAIOR QUE ZERO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2205": {
+"term":"OPME INFORMADO NÃO COBERTO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2206": {
+"term":"OPME INFORMADO NÃO AUTORIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2207": {
+"term":"COBRANÇA DE OPME NÃO UTILIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2208": {
+"term":"COBRANÇA DE OPME NO ITEM MATERIAL E MEDICAMENTOS.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2209": {
+"term":"COBRANÇA DE OPME EM DESACORDO COM RELATÓRIO TÉCNICO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2210": {
+"term":"COBRANÇA DE OPME EM QUANTIDADE INCOMPATÍVEL COM O PROCEDIMENTO REALIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2211": {
+"term":"COBRANÇA DE OPME INCLUSA NO PACOTE NEGOCIADO.",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"2212": {
+"term":"OPME EM DESACORDO COM OS CRITÉRIOS TÉCNICOS ADOTADOS PELA OPERADORA",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2213": {
+"term":"OPME PAGO A FORNECEDOR TERCERIZADO",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2301": {
+"term":"GASES MEDICINAIS INVÁLIDOS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2302": {
+"term":"COBRANÇA DE OXIGENOTERAPIA SEM PRESCRIÇÃO MÉDICA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2303": {
+"term":"COBRANÇA DE OXIGENOTERAPIA COM QUANTITATIVO DE USO EM DIVERGÊNCIA/PAGO VALOR CORRIGIDO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2304": {
+"term":"COBRANÇA DE OXIGÊNIO INCLUSO NA TAXA DE NEBULIZAÇÃO ESPECIFICADA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2305": {
+"term":"COBRANÇA DE OXIGENOTERAPIA EM USO PROLONGADO, SEM JUSTIFICATIVA DE USO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2306": {
+"term":"COBRANÇA DE OXIGENOTERAPIA SEM REGISTRO DE CONTROLE DE USO (ENTRADA E SAÍDA).",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2307": {
+"term":"COBRANÇA DE GASES EM QUANTIDADE SUPERIOR AO PERÍODO DE PERMANÊNCIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2308": {
+"term":"COBRANÇA DE CO2 NAS CIRURGIAS VIDEO/LAPAROSCÓPICAS DURANTE TODA A REALIZAÇÃO DO PROCEDIMENTO (INÍCIO AO FIM).",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2309": {
+"term":"COBRANÇA DE AR COMPRIMIDO SEM REGISTRO NO BOLETIM ANESTÉSICO E DURAÇÃO DE USO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2310": {
+"term":"COBRANÇA DE GASES INCOMPATÍVEL COM O UTILIZADO/ PRESCRITO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2401": {
+"term":"TAXA / ALUGUEL INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2402": {
+"term":"COBRANÇA DE TAXA POR USO DE EQUIPAMENTO INCOMPATÍVEL COM O PROCEDIMENTO REALIZADO/USO PREVISTO NO PROCEDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2403": {
+"term":"COBRANÇA DE TAXA DE USO DE BOMBA DE INFUSÃO EM PACIENTE INTERNADO NA UTI",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2404": {
+"term":"COBRANÇA DE OUTRAS TAXAS ASSOCIADAS/INCLUSAS NA COBRANÇA DA TAXA DE SALA PREVISTA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2405": {
+"term":"COBRANÇA DE MAIS DE UMA TAXA DE SALA DE CIRURGIA, POR CONTA DO NÚMERO DE PROCEDIMENTOS REALIZADOS NO MESMO TEMPO CIRÚRGICO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2406": {
+"term":"COBRANÇA INDEVIDA DE TAXA DE SALA POR ADMINISTRAÇÃO DE MEDICAMENTOS.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2407": {
+"term":"COBRANÇA DE TAXAS, DE SERVIÇOS REALIZADOS EM AMBIENTES INCOMPATÍVEIS COM O USO DE EQUIPAMENTOS.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2408": {
+"term":"COBRANÇA DE TAXAS EM QUANTIDADE SUPERIOR AO TEMPO DE PERMANÊNCIA HOSPITALAR",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2409": {
+"term":"COBRANÇA DE TAXA DE OBSERVAÇÃO EM PRONTO SOCORRO COM PERMANÊNCIA MENOR QUE O PERÍODO ESTIPULADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2410": {
+"term":"COBRANÇA DE TAXA DE OBSERVAÇÃO EM PRONTO SOCORRO SEM O REGISTRO DA PERMANÊNCIA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2411": {
+"term":"COBRANÇA DE TAXA DE SALA DE PRONTO SOCORRO, PARA APLICAÇÃO DE MEDICAMENTOS.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2412": {
+"term":"COBRANÇA DE TAXA DE RECUPERAÇÃO ANESTÉSICA NÃO JUSTIFICADA PARA O PROCEDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2413": {
+"term":"COBRANÇA DE TAXA INCLUSA NO PACOTE NEGOCIADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2414": {
+"term":"COBRANÇA DE TAXA DE EQUIPAMENTO EM CONCOMITÂNCIA COM A COBRANÇA DE TAXA PARA O PROCEDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2415": {
+"term":"TAXA EXIGE INFORMAÇÃO DO VALOR NA GUIA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2416": {
+"term":"COBRANÇA DE TAXA DE RECUPERAÇÃO ANESTÉSICA PARA PACIENTES COM PÓS-OPERATÓRIO IMEDIATO REALIZADO NA UTI/CTI.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2417": {
+"term":"COBRANÇA DE TAXA DE RECUPERAÇÃO ANESTÉSICA SEM A PRESENÇA DO ANESTESISTA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2418": {
+"term":"COBRANÇA DE TAXA DE SALA INCOMPATÍVEL COM O PROCEDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2419": {
+"term":"COBRANÇA DE TAXA DE OBSERVAÇÃO PARA ATENDIMENTO QUE GEROU UMA INTERNAÇÃO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2420": {
+"term":"COBRANÇA DE TAXA DE SALA CIRÚRGICA COM PORTE ANESTÉSICO DIFERENTE DO PROCEDIMENTO AUTORIZADO/REALIZADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+},
+2421:{ "term":"COBRANÇA DE TAXA EM QUANTIDADE INCORRETA."
+"startDate": "16/11/2006" 
+"endVig":"30/06/2026" 
+"endImpl":"16/11/2006"
+},
+"2422": {
+"term":"COBRANÇA DE TAXA POR USO DE EQUIPAMENTO DE USO OBRIGATÓRIO NA SALA DE CIRURGIA, CUJA TAXA DE SALA CIRÚRGICA JÁ INCLUI SEU USO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2423": {
+"term":"COBRANÇA DE TAXA DE EQUIPAMENTOS DE USO OBRIGATÓRIO NO LOCAL DE ATENDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2501": {
+"term":"PROCEDIMENTO EM SÉRIE INVALIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2502": {
+"term":"COBRANÇA DE DUAS AVALIAÇÕES FISIOTERÁPICAS",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2503": {
+"term":"COBRANÇA DE PSICOTERAPIA INDIVIDUAL, QUANDO O APLICADO É A COBRANÇA DE PSICOTERAPIA EM GRUPO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2505": {
+"term":"O CÓDIGO COBRADO É DIFERENTE DO CÓDIGO AUTORIZADO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2506": {
+"term":"A QUANTIDADE DE SESSÕES COBRADAS É DIFERENTE DA QUANTIDADE AUTORIZADA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2507": {
+"term":"O CÓDIGO AUTORIZADO ESTÁ INCOMPATÍVEL COM A PRESCRIÇÃO MÉDICA SOLICITADA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2508": {
+"term":"COBRANÇA DE SESSÕES SEM O DEVIDO PLANO DE TRATAMENTO E, OU, COM O PRAZO DE PAGAMENTO EXPIRADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2509": {
+"term":"COBRANÇA DO PROCEDIMENTO SERIADO INCOMPATÍVEL COM O QUADRO CLÍNICO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2510": {
+"term":"COBRANÇA DO PROCEDIMENTO SERIADO EM NÚMERO DE SESSÕES ACIMA DA QUANTIDADE ESTABELECIDA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2512": {
+"term":"COBRANÇA DE SESSÕES DE FISIOTERAPIA EM DESACORDO COM AS EVOLUÇÕES DO PRONTUÁRIO MÉDICO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2513": {
+"term":"COBRANÇA DE TRATAMENTO SERIADO SEM JUSTIFICATIVA CLÍNICA/TÉCNICA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2514": {
+"term":"SERVIÇO NÃO CONTRATADO PARA O PRESTADOR",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2515": {
+"term":"LOCAL DE ATENDIMENTO INADEQUADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2516": {
+"term":"QUANTIDADE COBRADA DIFERENTE DA REALIZADA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2602": {
+"term":"COBRANÇA DE HONORÁRIO INCLUSO NO PROCEDIMENTO PRINCIPAL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2603": {
+"term":"COBRANÇA DE HONORÁRIO SEM REGISTRO DA EFETIVA PARTICIPAÇÃO DO PROFISSIONAL",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2604": {
+"term":"PROCEDIMENTO PRINCIPAL NÃO REQUER EQUIPE MÉDICA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2606": {
+"term":"COBRANÇA DO HONORÁRIO EM LOCAL DE ATENDIMENTO INCORRETO (INEXISTENTE).",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2608": {
+"term":"COBRANÇA DE CONSULTA INDEVIDA, QUANDO O PROCEDIMENTO PRINCIPAL JÁ ESTÁ SENDO REMUNERADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2609": {
+"term":"LOCAL DE ATENDIMENTO NÃO INFORMADO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2610": {
+"term":"GRAU DE PARTICIPAÇÃO DE AUXILIAR INCOMPATÍVEL COM PROCEDIMENTO COBRADO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2611": {
+"term":"COBRANÇA DE ESPECIALISTA NÃO JUSTIFICADA NO EVENTO",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"2612": {
+"term":"COBRANÇA INDEVIDA DE EQUIPE \"STAND-BY\", JÁ QUE ANGIOPLASTIA SEGUIDA DE CIRURGIA CARDÍACA",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2613": {
+"term":"HONORÁRIO MÉDICO DO ANESTESISTA JÁ LIBERADO NO PROCEDIMENTO CIRÚRGICO, POIS \"ANALGESIA POR DIA SUBSEQUENTE\" COBRADA NA MESMA DATA DO EVENTO CIRÚRGICO",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2614": {
+"term":"COBRANÇA DE CADA PARTICIPANTE DA EQUIPE DEVE SER FEITA EM GUIAS DIFERENTES",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2702": {
+"term":"COBRANÇA DE EXAME NÃO SOLICITADO PELO MÉDICO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2703": {
+"term":"EXAME SEM REGISTRO DE EXECUÇÃO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2704": {
+"term":"COBRANÇA DE EXAME NÃO CORRELACIONADO AO RELATÓRIO ESPECÍFICO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2705": {
+"term":"COBRANÇA DE PROCEDIMENTO/EXAME SEM JUSTIFICATIVA PARA REALIZAÇÃO OU COM JUSTIFICATIVA INSUFICIENTE.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2706": {
+"term":"COBRANÇA DE PROCEDIMENTO/EXAME COM DATA DE AUTORIZAÇÃO POSTERIOR A DO ATENDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2707": {
+"term":"EXAME NÃO AUTORIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2708": {
+"term":"COBRANÇA DE EXAME EM QUANTIDADE INCOMPATÍVEL COM O PROCEDIMENTO/EVOLUÇÃO CLÍNICA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2710": {
+"term":"COBRANÇA DE EXAME QUE EXIGE AUTORIZAÇÃO PRÉVIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2711": {
+"term":"COBRANÇA DE EXAME COM HISTÓRIA CLÍNICA/HIPÓTESE DIAGNÓSTICA NÃO COMPATÍVEL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2712": {
+"term":"COBRANÇA DE EXAME EM QUANTIDADE ACIMA DA MÁXIMA PERMITIDA/AUTORIZADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2713": {
+"term":"COBRANÇA DE EXAME NÃO COMPATÍVEL COM A IDADE.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2714": {
+"term":"COBRANÇA DE EXAME COM AUSÊNCIA DE RESULTADO OU LAUDO TÉCNICO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2715": {
+"term":"EXAME REALIZADO PELO MESMO PROFISSIONAL, NA MESMA ESPECIALIDADE, NO PRAZO INFERIOR AO ESTIPULADO SEM JUSTIFICATIVA ADEQUADA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2716": {
+"term":"EXAME COBRADO NÃO CORRESPONDE AO EXAME EXECUTADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2717": {
+"term":"COBRANÇA DE EXAME AMBULATORIAL COM DATA DE AUTORIZAÇÃO POSTERIOR À DO ATENDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2718": {
+"term":"EXAMES NÃO JUSTIFICAM CARÁTER DE URGÊNCIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2801": {
+"term":"PACOTE INVÁLIDO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2802": {
+"term":"PACOTE INCOMPATÍVEL COM O SEXO DO BENEFICIÁRIO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2803": {
+"term":"IDADE DO BENEFICIÁRIO INCOMPATÍVEL COM O PACOTE",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2804": {
+"term":"VALOR TOTAL DO PACOTE DIFERENTE DO VALOR PROCESSADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2805": {
+"term":"VALOR DO PACOTE SUPERIOR AO VALOR DOS ITENS",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2806": {
+"term":"COBRANÇA DE PACOTE NÃO EXECUTADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2807": {
+"term":"COBRANÇA DE PACOTE NÃO SOLICITADO PELO MÉDICO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2808": {
+"term":"PACOTE SEM REGISTRO DE EXECUÇÃO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2809": {
+"term":"COBRANÇA DE PACOTE NÃO CORRELACIONADO AO RELATÓRIO ESPECÍFICO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2810": {
+"term":"COBRANÇA DE PACOTE SEM JUSTIFICATIVA PARA REALIZAÇÃO OU COM JUSTIFICATIVA INSUFICIENTE.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2811": {
+"term":"COBRANÇA DE PACOTE COM DATA DE AUTORIZAÇÃO POSTERIOR À DO ATENDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2812": {
+"term":"PACOTE NÃO AUTORIZADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2813": {
+"term":"COBRANÇA DE PACOTE EM QUANTIDADE INCOMPATÍVEL COM O PROCEDIMENTO/EVOLUÇÃO CLÍNICA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2814": {
+"term":"ITENS DE COMPOSIÇÃO DO PACOTE NÃO REALIZADOS",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2815": {
+"term":"COBRANÇA DO PACOTE EXIGE AUTORIZAÇÃO PRÉVIA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2816": {
+"term":"COBRANÇA DE PACOTE COM HISTÓRIA CLÍNICA/HIPÓTESE DIAGNÓSTICA NÃO COMPATÍVEL",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2817": {
+"term":"COBRANÇA DE PACOTE EM QUANTIDADE ACIMA DA MÁXIMA PERMITIDA/AUTORIZADA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2818": {
+"term":"COBRANÇA DE PACOTE NÃO COMPATÍVEL COM A IDADE.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2819": {
+"term":"COBRANÇA DE PACOTE COM AUSÊNCIA DE RESULTADO OU LAUDO TÉCNICO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2820": {
+"term":"PACOTE REALIZADO PELO MESMO PROFISSIONAL, NA MESMA ESPECIALIDADE, NO PRAZO INFERIOR AO ESTIPULADO SEM JUSTIFICATIVA ADEQUADA.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2821": {
+"term":"PACOTE COBRADO NÃO CORRESPONDE AO EXAME EXECUTADO",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2822": {
+"term":"COBRANÇA DE PACOTE AMBULATORIAL COM DATA DE AUTORIZAÇÃO POSTERIOR À DO ATENDIMENTO.",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2901": {
+"term":"REVISÃO DE GLOSA INVÁLIDA",
+"startDate": "16/11/2006",
+"endVig": "30/06/2026",
+"endImpl": "16/11/2006"
+     },
+"2902": {
+"term":"GLOSA MANTIDA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2903": {
+"term":"PEDIDO DE REVISÃO SEM JUSTIFICATIVA",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2904": {
+"term":"MAIS DE UM RECURSO DE GLOSA PARA A MESMA GUIA/PROTOCOLO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2905": {
+"term":"A GUIA NÃO É DE REVISÃO",
+"startDate": "16/11/2006",
+"endVig": "",
+"endImpl": "16/11/2006"
+     },
+"2907": {
+"term":"PRAZO DE 180 DIAS ULTRAPASSADO PARA SOLICITAÇÃO DE REANÁLISE",
+"startDate": "10/10/2012",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"2908": {
+"term":"SOLICITAÇÃO DE REANÁLISE EFETUADA DE FORMA INCORRETA",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"2909": {
+"term":"PRAZO PARA SOLICITAÇÃO DE RECURSO DE GLOSA PRESCRITO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3001": {
+"term":"PROCEDIMENTO ODONTOLÓGICO INVÁLIDO",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3002": {
+"term":"COBRANÇA DE PROCEDIMENTO ODONTOLÓGICO QUE EXIGE AUTORIZAÇÃO PRÉVIA",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3003": {
+"term":"IDADE DO BENEFICIÁRIO INCOMPATÍVEL COM O PROCEDIMENTO ODONTOLÓGICO",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3004": {
+"term":"COBRANÇA DE PROCEDIMENTO ODONTOLÓGICO EM QUANTIDADE ACIMA DA MÁXIMA PERMITIDA/AUTORIZADA",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3007": {
+"term":"PROCEDIMENTOS ODONTOLÓGICOS DUPLICADOS",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3008": {
+"term":"PROCEDIMENTO ODONTOLÓGICO INCLUSO NO PROCEDIMENTO PRINCIPAL",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"3009": {
+"term":"COBRANÇA DE PROCEDIMENTO ODONTOLÓGICO NÃO EXECUTADO",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3010": {
+"term":"COBRANÇA DE PROCEDIMENTO NÃO SOLICITADO PELO CIRURGIÃO-DENTISTA",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3011": {
+"term":"PROCEDIMENTO ODONTOLÓGICO SEM REGISTRO DE EXECUÇÃO",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3012": {
+"term":"COBRANÇA DE PROCEDIMENTO ODONTOLÓGICO NÃO CORRELACIONADO AO RELATÓRIO ESPECÍFICO",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3013": {
+"term":"COBRANÇA DE PROCEDIMENTO ODONTOLÓGICO SEM JUSTIFICATIVA PARA REALIZAÇÃO OU COM JUSTIFICATIVA INSUFICIENTE.",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3014": {
+"term":"COBRANÇA DE PROCEDIMENTO ODONTOLÓGICO COM DATA DE AUTORIZAÇÃO POSTERIOR À DO ATENDIMENTO.",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3015": {
+"term":"COBRANÇA DE PROCEDIMENTO ODONTOLÓGICO COM AUSÊNCIA DE RESULTADO OU LAUDO TÉCNICO.",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3016": {
+"term":"PROCEDIMENTO ODONTOLÓGICO REALIZADO, NA MESMA ESPECIALIDADE, NO PRAZO INFERIOR AO ESTIPULADO, SEM JUSTIFICATIVA",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"3017": {
+"term":"PROCEDIMENTO COBRADO NÃO É IGUAL AO EXECUTADO",
+"startDate": "11/05/2007",
+"endVig": "30/06/2026",
+"endImpl": "11/05/2007"
+     },
+"3028": {
+"term":"EVENTO RESTRITO A ESPECIALISTAS",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "11/05/2007"
+     },
+"3042": {
+"term":"APÓS ANÁLISE DA RADIOGRAFIA INICIAL, VERIFICOU-SE EXODONTIA DE INCLUSO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3043": {
+"term":"APÓS ANÁLISE DA RADIOGRAFIA INICIAL, VERIFICOU-SE EXODONTIA DE SEMI-INCLUSO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3044": {
+"term":"APÓS ANÁLISE DA RADIOGRAFIA INICIAL, VERIFICOU-SE EXODONTIA SIMPLES",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3050": {
+"term":"COBRANÇA DE URGÊNCIA/EMERGÊNCIA NA VIGÊNCIA DO TRATAMENTO ODONTOLÓGICO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3053": {
+"term":"ELEMENTOS PODEM SER VISUALIZADOS EM UMA MESMA PELÍCULA",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3054": {
+"term":"IDENTIFICADO(S) CONDUTO(S) NÃO OBTURADO(S)",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3069": {
+"term":"RADIOGRAFIA INDICA A NECESSIDADE DE TRATAMENTO ENDODÔNTICO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3070": {
+"term":"RADIOGRAFIA INDICA A PRESENÇA DE RAIZ RESIDUAL NO ALVEÓLO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3071": {
+"term":"RADIOGRAFIA INDICA AUSÊNCIA DE NÚCLEO",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3073": {
+"term":"RADIOGRAFIA INDICA DESVIO DA TRAJETÓRIA DO CANAL",
+"startDate": "01/12/2025",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3077": {
+"term":"CADEIA DE CERTIFICAÇÃO INVÁLIDA",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3078": {
+"term":"RADIOGRAFIA INDICA FALHA NA ADAPTAÇÃO DA COROA/PEÇA PROTÉTICA",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3079": {
+"term":"RADIOGRAFIA INDICA TRATAMENTO ENDODÔNTICO E NÃO RETRATAMENTO ENDODÔNTICO",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"3080": {
+"term":"RADIOGRAFIA INICIAL E FINAL NÃO ENVIADAS",
+"startDate": "01/05/2014",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3081": {
+"term":"RADIOGRAFIA INICIAL NÃO ENVIADA",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3082": {
+"term":"RADIOGRAFIA/IMAGEM INDICA FALHA NA RESTAURAÇÃO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3083": {
+"term":"REAVALIAR O PLANO DE TRATAMENTO OBSERVANDO CRITÉRIOS DE INDICAÇÃO, OPORTUNIDADE E VIABILIDADE.",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"3084": {
+"term":"RELATÓRIO ANALISE TÉCNICA SEM CARIMBO/ASSINATURA DO PRESTADOR",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"3085": {
+"term":"RADIOGRAFIA NÃO CORRESPONDE AO PROCEDIMENTO SOLICITADO",
+"startDate": "01/04/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"3086": {
+"term":"TRATAMENTO ODONTOLÓGICO NÃO CARACTERIZADO COMO URGÊNCIA.",
+"startDate": "01/04/2013",
+"endVig": "30/06/2026",
+"endImpl": "31/08/2014"
+     },
+"3087": {
+"term":"COBRANÇA INDEVIDA DE TAXA ADMINISTRATIVA",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"3088": {
+"term":"VALOR ACATADO, CONFORME REAJUSTE RETROATIVO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3089": {
+"term":"QUANTIDADE DE ITENS INCOMPATÍVEL COM O PERÍODO DE INTERNAÇÃO",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"3090": {
+"term":"NECESSÁRIO ENVIO DAS ETIQUETAS E SELOS HEMOTERÁPICOS DO MATERIAL UTILIZADO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3091": {
+"term":"COBRANÇA FORA DO PRAZO ESTIPULADO NO CONTRATO",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"3092": {
+"term":"VALOR ACATADO POR GLOSA REALIZADA INDEVIDAMENTE, APÓS AVALIAÇÃO DO RECURSO",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"3093": {
+"term":"VALOR ACATADO POR AUTORIZAÇÃO ESPECIAL",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3094": {
+"term":"VALOR DA TAXA ADMINISTRATIVA ALTERADO EM RAZÃO DE GLOSAS",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3095": {
+"term":"RECURSO DE GLOSA ACATADO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3096": {
+"term":"ATENDIMENTO NÃO CONFIRMADO PELO BENEFICIÁRIO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3097": {
+"term":"TIPO DE ATENDIMENTO INCOMPATÍVEL COM A SEGMENTAÇÃO ASSISTENCIAL CONTRATADA",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3098": {
+"term":"O PRESTADOR POSSUI PACOTE CONTRATADO PARA ESTE PROCEDIMENTO, VERIFIQUE O CÓDIGO CORRESPONDENTE",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3100": {
+"term":"PARA LIBERAR ESTE ACESSO, ENTRE EM CONTATO COM A OPERADORA E SOLICITE O CADASTRAMENTO DO SEU CÓDIGO DE ORIGEM",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3101": {
+"term":"O PROCEDIMENTO SOLICITADO É DE EXECUÇÃO ÚNICA E JÁ FOI REALIZADO PELO BENEFICIÁRIO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3102": {
+"term":"É NECESSÁRIO TER UM PROCEDIMENTO RELACIONADO À SOLICITAÇÃO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3103": {
+"term":"SOLICITAÇÃO DE AUTORIZAÇÃO FORA DO PRAZO ACORDADO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3104": {
+"term":"RECUSADO, CONFORME JUNTA MÉDICA/ODONTOLÓGICA",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3105": {
+"term":"ITEM COM UTILIZAÇÃO SUSPENSA PELO ÓRGÃO COMPETENTE",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3106": {
+"term":"REGISTRO ANVISA INVÁLIDO OU NÃO INFORMADO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3107": {
+"term":"ITEM CATEGORIZADO COMO NÃO DESCARTÁVEL",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3108": {
+"term":"ITEM INCLUSO NO PACOTE NEGOCIADO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3109": {
+"term":"PROCEDIMENTO SOLICITADO NÃO AUTORIZADO POR NÃO CONSTAR DO ROL DE PROCEDIMENTOS E EVENTOS EM SAÚDE DA ANS",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3110": {
+"term":"BLOQUEIO JUDICIAL",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3111": {
+"term":"CAMPO CONDICIONADO NÃO PREENCHIDO OU INCORRETO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3112": {
+"term":"DESCONTO DE COPARTICIPAÇÃO/FRANQUIA CONFORME CONTRATO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3113": {
+"term":"NECESSÁRIO ENVIO DE RADIOGRAFIA PERIAPICAL DA REGIÃO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3114": {
+"term":"NECESSÁRIO ENVIO DE RADIOGRAFIA INTERPROXIMAL DA REGIÃO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3115": {
+"term":"NECESSÁRIO ENVIO DE RADIOGRAFIA OCUSAL DA REGIÃO",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+     },
+"3116": {
+"term":"REALIZAÇÃO DE PROCEDIMENTO COM NECESSIDADE ESTÉTICA",
+"startDate": "01/05/2016",
+"endVig": "30/06/2026",
+"endImpl": "31/07/2016"
+     },
+"3117": {
+"term":"PROCEDIMENTO ODONTOLÓGICO COM INDICAÇÃO TÉCNICA EM PROGNÓSTICO DESFAVORÁVEL",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+}
+

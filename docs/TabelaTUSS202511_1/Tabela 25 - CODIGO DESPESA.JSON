@@ -1,0 +1,45 @@
+{
+  "meta": {
+     "version": "2025.11",
+     "updatedAt": "2025-11-01",
+     "source": "Tabela 25 - Terminologia de Código da despesa"
+        },
+  "codigoDespesa":{
+"01": {
+"term":"Gases medicinais",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"02": {
+"term":"Medicamentos",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"03": {
+"term":"Materiais",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"05": {
+"term":"Diárias",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"07": {
+"term":"Taxas e aluguéis",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     },
+"08": {
+"term":"OPME",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+     }
+    }
+}

@@ -1,0 +1,1485 @@
+{
+"meta": {
+"version": "2025.11",
+"updatedAt": "2025-11-01",
+"source": "Tabela 24 - Terminologia do código brasileiro de ocupação (CBO)"
+},
+"cbo":{
+"201115": {
+"term":"Geneticista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"203015": {
+"term":"Pesquisador em biologia de microorganismos e parasitas",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"213150": {
+"term":"Físico médico",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"221105": {
+"term":"Biólogo",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223204": {
+"term":"Cirurgião dentista - auditor",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223208": {
+"term":"Cirurgião dentista - clínico geral",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223212": {
+"term":"Cirurgião dentista - endodontista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223216": {
+"term":"Cirurgião dentista - epidemiologista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223220": {
+"term":"Cirurgião dentista - estomatologista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223224": {
+"term":"Cirurgião dentista - implantodontista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223228": {
+"term":"Cirurgião dentista - odontogeriatra",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223232": {
+"term":"Cirurgião dentista - odontologista legal",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223236": {
+"term":"Cirurgião dentista - odontopediatra",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223240": {
+"term":"Cirurgião dentista - ortopedista e ortodontista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223244": {
+"term":"Cirurgião dentista - patologista bucal",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223248": {
+"term":"Cirurgião dentista - periodontista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223252": {
+"term":"Cirurgião dentista - protesiólogo bucomaxilofacial",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223256": {
+"term":"Cirurgião dentista - protesista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223260": {
+"term":"Cirurgião dentista - radiologista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223264": {
+"term":"Cirurgião dentista - reabilitador oral",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223268": {
+"term":"Cirurgião dentista - traumatologista bucomaxilofacial",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223272": {
+"term":"Cirurgião dentista de saúde coletiva",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223276": {
+"term":"Cirurgião dentista - odontologia do trabalho",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223280": {
+"term":"Cirurgião dentista - dentística",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223284": {
+"term":"Cirurgião dentista - disfunção temporomandibular e dor orofacial",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223288": {
+"term":"Cirurgião dentista - odontologia para pacientes com necessidades especiais",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223293": {
+"term":"Cirurgião-dentista da estratégia de saúde da família",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223505": {
+"term":"Enfermeiro",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223605": {
+"term":"Fisioterapeuta geral",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223625": {
+"term":"Fisioterapeuta respiratória",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223630": {
+"term":"Fisioterapeuta neurofuncional",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223635": {
+"term":"Fisioterapeuta traumato-ortopédica funcional",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223640": {
+"term":"Fisioterapeuta osteopata",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223645": {
+"term":"Fisioterapeuta quiropraxista",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223650": {
+"term":"Fisioterapeuta acupunturista",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223655": {
+"term":"Fisioterapeuta esportivo",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223660": {
+"term":"Fisioterapeuta do trabalho",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223710": {
+"term":"Nutricionista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223810": {
+"term":"Fonoaudiologo",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223905": {
+"term":"Terapeuta ocupacional",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223910": {
+"term":"Ortopista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225103": {
+"term":"Médico infectologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225105": {
+"term":"Médico acupunturista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225106": {
+"term":"Médico legista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225109": {
+"term":"Médico Nefrologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225110": {
+"term":"Médico alergista e imunologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225112": {
+"term":"Médico neurologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225115": {
+"term":"Médico angiologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225118": {
+"term":"Médico nutrologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225120": {
+"term":"Médico cardiologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225121": {
+"term":"Médico oncologista clínico",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225122": {
+"term":"Médico cancerologista pediátrico",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225124": {
+"term":"Médico pediatra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225125": {
+"term":"Médico clínico",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225127": {
+"term":"Médico pneumologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225130": {
+"term":"Médico de família e comunidade",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225133": {
+"term":"Médico psiquiatra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225135": {
+"term":"Médico dermatologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225136": {
+"term":"Médico reumatologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225139": {
+"term":"Médico sanitarista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225140": {
+"term":"Médico do trabalho",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225142": {
+"term":"Médico da estratégia de saúde da família",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225145": {
+"term":"Médico em medicina de tráfego",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225148": {
+"term":"Médico anatomopatologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225150": {
+"term":"Médico em medicina intensiva",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225151": {
+"term":"Médico anestesiologista",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225155": {
+"term":"Médico endocrinologista e metabologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225160": {
+"term":"Médico fisiatra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225165": {
+"term":"Médico gastroenterologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225170": {
+"term":"Médico generalista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225175": {
+"term":"Médico geneticista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225180": {
+"term":"Médico geriatra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225185": {
+"term":"Médico Hematologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225195": {
+"term":"Médico Homeopata",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225203": {
+"term":"Médico em cirurgia vascular",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225210": {
+"term":"Médico cirurgião cardiovascular",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225215": {
+"term":"Médico cirurgião de cabeça e pescoço",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225220": {
+"term":"Médico cirurgião do aparelho digestivo",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"201115": {
+"term": "Geneticista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"203015": {
+"term": "Pesquisador em biologia de microorganismos e parasitas",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"213150": {
+"term": "Físico médico",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"221105": {
+"term": "Biólogo",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223204": {
+"term": "Cirurgião dentista - auditor",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223208": {
+"term": "Cirurgião dentista - clínico geral",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223212": {
+"term": "Cirurgião dentista - endodontista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223216": {
+"term": "Cirurgião dentista - epidemiologista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223220": {
+"term": "Cirurgião dentista - estomatologista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223224": {
+"term": "Cirurgião dentista - implantodontista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223228": {
+"term": "Cirurgião dentista - odontogeriatra",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223232": {
+"term": "Cirurgião dentista - odontologista legal",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223236": {
+"term": "Cirurgião dentista - odontopediatra",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223240": {
+"term": "Cirurgião dentista - ortopedista e ortodontista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223244": {
+"term": "Cirurgião dentista - patologista bucal",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223248": {
+"term": "Cirurgião dentista - periodontista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223252": {
+"term": "Cirurgião dentista - protesiólogo bucomaxilofacial",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223256": {
+"term": "Cirurgião dentista - protesista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223260": {
+"term": "Cirurgião dentista - radiologista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223264": {
+"term": "Cirurgião dentista - reabilitador oral",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223268": {
+"term": "Cirurgião dentista - traumatologista bucomaxilofacial",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223272": {
+"term": "Cirurgião dentista de saúde coletiva",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223276": {
+"term": "Cirurgião dentista - odontologia do trabalho",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223280": {
+"term": "Cirurgião dentista - dentística",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223284": {
+"term": "Cirurgião dentista - disfunção temporomandibular e dor orofacial",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223288": {
+"term": "Cirurgião dentista - odontologia para pacientes com necessidades especiais",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223293": {
+"term": "Cirurgião-dentista da estratégia de saúde da família",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223505": {
+"term": "Enfermeiro",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223605": {
+"term": "Fisioterapeuta geral",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223625": {
+"term": "Fisioterapeuta respiratória",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223630": {
+"term": "Fisioterapeuta neurofuncional",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223635": {
+"term": "Fisioterapeuta traumato-ortopédica funcional",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223640": {
+"term": "Fisioterapeuta osteopata",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223645": {
+"term": "Fisioterapeuta quiropraxista",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223650": {
+"term": "Fisioterapeuta acupunturista",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223655": {
+"term": "Fisioterapeuta esportivo",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223660": {
+"term": "Fisioterapeuta do trabalho",
+"startDate": "01/05/2016",
+"endVig": "",
+"endImpl": "31/07/2016"
+},
+"223710": {
+"term": "Nutricionista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223810": {
+"term": "Fonoaudiólogo",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223905": {
+"term": "Terapeuta ocupacional",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"223910": {
+"term": "Ortopista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225103": {
+"term": "Médico infectologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225105": {
+"term": "Médico acupunturista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225106": {
+"term": "Médico legista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225109": {
+"term": "Médico Nefrologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225110": {
+"term": "Médico alergista e imunologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225112": {
+"term": "Médico neurologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225115": {
+"term": "Médico angiologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225118": {
+"term": "Médico nutrologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225120": {
+"term": "Médico cardiologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225121": {
+"term": "Médico oncologista clínico",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225122": {
+"term": "Médico cancerologista pediátrico",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225124": {
+"term": "Médico pediatra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225125": {
+"term": "Médico clínico",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225127": {
+"term": "Médico pneumologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225130": {
+"term": "Médico de família e comunidade",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225133": {
+"term": "Médico psiquiatra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225135": {
+"term": "Médico dermatologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225136": {
+"term": "Médico reumatologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225139": {
+"term": "Médico sanitarista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225140": {
+"term": "Médico do trabalho",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225142": {
+"term": "Médico da estratégia de saúde da família",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225145": {
+"term": "Médico em medicina de tráfego",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225148": {
+"term": "Médico anatomopatologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225150": {
+"term": "Médico em medicina intensiva",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225151": {
+"term": "Médico anestesiologista",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225155": {
+"term": "Médico endocrinologista e metabologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225160": {
+"term": "Médico fisiatra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225165": {
+"term": "Médico gastroenterologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225170": {
+"term": "Médico generalista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225175": {
+"term": "Médico geneticista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225180": {
+"term": "Médico geriatra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225185": {
+"term": "Médico Hematologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225195": {
+"term": "Médico Homeopata",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225203": {
+"term": "Médico em cirurgia vascular",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225210": {
+"term": "Médico cirurgião cardiovascular",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225215": {
+"term": "Médico cirurgião de cabeça e pescoço",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225220": {
+"term": "Médico cirurgião do aparelho digestivo",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225225": {
+"term": "Médico cirurgião geral",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225230": {
+"term": "Médico cirurgião pediátrico",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225235": {
+"term": "Médico cirurgião plástico",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225240": {
+"term": "Médico cirurgião torácico",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225250": {
+"term": "Médico ginecologista e obstetra",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225255": {
+"term": "Médico Mastologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225260": {
+"term": "Médico neurocirurgião",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225265": {
+"term": "Médico oftalmologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225270": {
+"term": "Médico ortopedista e traumatologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225275": {
+"term": "Médico otorrinolaringologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225280": {
+"term": "Médico proctologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225285": {
+"term": "Médico urologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225290": {
+"term": "Médico cancerologista cirúrgico",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225295": {
+"term": "Médico cirurgião da mão",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225305": {
+"term": "Médico citopatologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225310": {
+"term": "Médico em endoscopia",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225315": {
+"term": "Médico em medicina nuclear",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225320": {
+"term": "Médico em radiologia e diagnóstico por imagem",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225325": {
+"term": "Médico patologista",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225330": {
+"term": "Médico radioterapeuta",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225335": {
+"term": "Médico patologista clínico / medicina laboratorial",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225340": {
+"term": "Médico hemoterapeuta",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225345": {
+"term": "Médico hiperbarista",
+"startDate": "01/12/2013",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"225350": {
+"term": "Médico neurofisiologista",
+"startDate": "10/10/2012",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"239425": {
+"term": "Psicopedagogo",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"251510": {
+"term": "Psicólogo clínico",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"251545": {
+"term": "Neuropsicólogo",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"251550": {
+"term": "Psicanalista",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"251605": {
+"term": "Assistente social",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"322205": {
+"term": "Técnico de enfermagem",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"322220": {
+"term": "Técnico de enfermagem psiquiátrica",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"322225": {
+"term": "Instrumentador cirúrgico",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"322230": {
+"term": "Auxiliar de enfermagem",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"516210": {
+"term": "Cuidador de idosos",
+"startDate": "26/09/2008",
+"endVig": "",
+"endImpl": "26/09/2008"
+},
+"223435": {
+"term": "Farmacêutico industrial",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223430": {
+"term": "Farmacêutico em saúde pública",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223415": {
+"term": "Farmacêutico analista clínico",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223405": {
+"term": "Farmacêutico",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223420": {
+"term": "Farmacêutico de alimentos",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223440": {
+"term": "Farmacêutico toxicologista",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223445": {
+"term": "Farmacêutico hospitalar e clínico",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223425": {
+"term": "Farmacêutico práticas integrativas e complementares",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223565": {
+"term": "Enfermeiro da estratégia de saúde da família",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223560": {
+"term": "Enfermeiro sanitarista",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223555": {
+"term": "Enfermeiro puericultor e pediátrico",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223550": {
+"term": "Enfermeiro psiquiátrico",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223545": {
+"term": "Enfermeiro obstétrico",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223540": {
+"term": "Enfermeiro neonatologista",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223535": {
+"term": "Enfermeiro nefrologista",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223530": {
+"term": "Enfermeiro do trabalho",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223525": {
+"term": "Enfermeiro de terapia intensiva",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223520": {
+"term": "Enfermeiro de centro cirúrgico",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223515": {
+"term": "Enfermeiro de bordo",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223510": {
+"term": "Enfermeiro auditor",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223570": {
+"term": "Perfusionista",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223705": {
+"term": "Dietista",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223845": {
+"term": "Fonoaudiólogo em voz",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223830": {
+"term": "Fonoaudiólogo em linguagem",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223825": {
+"term": "Fonoaudiólogo em disfagia",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223835": {
+"term": "Fonoaudiólogo em motricidade orofacial",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223840": {
+"term": "Fonoaudiólogo em saúde coletiva",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223820": {
+"term": "Fonoaudiólogo em audiologia",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"223815": {
+"term": "Fonoaudiólogo educacional",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"225154": {
+"term": "Médico antroposófico",
+"startDate": "01/06/2016",
+"endVig": "",
+"endImpl": "30/11/2016"
+},
+"999999": {
+"term": "CBO do prestador solicitante desconhecido ou não informado",
+"startDate": "01/03/2019",
+"endVig": "",
+"endImpl": "31/08/2014"
+},
+"221205": {
+"term": "Biomédico",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"224105": {
+"term": "Avaliador físico",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"224110": {
+"term": "Ludomotricista",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"224115": {
+"term": "Preparador de atleta",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"224120": {
+"term": "Preparador físico",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"224125": {
+"term": "Técnico de desporto individual e coletivo (exceto futebol)",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"224130": {
+"term": "Técnico de laboratório e fiscalização desportiva",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"224135": {
+"term": "Treinador profissional de futebol",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"226305": {
+"term": "Musicoterapeuta",
+"startDate": "01/08/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"225355": {
+"term": "Médico radiologista intervencionista",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"239440": {
+"term": "Neuropsicopedagogo clínico",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"239445": {
+"term": "Neuropsicopedagogo institucional",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"251555": {
+"term": "Psicólogo acupunturista",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"223915": {
+"term": "Psicomotricista",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"226310": {
+"term": "Arteterapeuta",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"226315": {
+"term": "Equoterapeuta",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"322120": {
+"term": "Massoterapeuta",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"322125": {
+"term": "Terapeuta holístico",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"224140": {
+"term": "Profissional de educação física na saúde",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"131220": {
+"term": "Gerontólogo",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"226105": {
+"term": "Quiropraxista",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"226110": {
+"term": "Osteopata",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"226320": {
+"term": "Naturólogo",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"322135": {
+"term": "Doula",
+"startDate": "01/12/2021",
+"endVig": "",
+"endImpl": "30/04/2023"
+},
+"223575": {
+"term": "Obstetriz",
+"startDate": "01/06/2025",
+"endVig": "",
+"endImpl": "30/11/2025"
+}
+}
+}
