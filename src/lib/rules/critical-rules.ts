@@ -133,27 +133,34 @@ export class CID10ObrigatorioRule implements ValidationRule {
 
     validate(context: ValidationContext): ValidationError[] {
         const errors: ValidationError[] = [];
-        const cids = extractFieldValues(context.parsedXml, 'cid');
+        const cids = extractFieldValues(context.parsedXml, 'cid10'); // Alguns XMLs usam 'cid10', outros estruturas aninhadas
+        // Tentar também extrair genericamente 'codigodiagnostico' se cid10 falhar
+        const codigosDiagnostico = cids.length > 0 ? cids : extractFieldValues(context.parsedXml, 'codigodiagnostico');
+
         const indicacaoClinica = extractFieldValues(context.parsedXml, 'indicacaoclinica');
 
-        // CID-10 obrigatório para internação e SADT
-        if (cids.length === 0 && indicacaoClinica.length === 0) {
+        // CID-10 obrigatório para internação e SADT (exceto se tiver indicação clínica em alguns casos, mas a regra geral é ter CID)
+        if (codigosDiagnostico.length === 0 && indicacaoClinica.length === 0) {
             errors.push({
                 id: crypto.randomUUID(),
                 line: 0,
                 column: 0,
-                message: 'CID-10 obrigatório não informado',
+                message: 'Diagnóstico (CID-10) ou Indicação Clínica obrigatórios',
                 severity: 'error',
                 code: 'CID001',
                 field: 'cid10',
-                suggestion: 'Informe o CID-10 principal (formato: A00-Z99)',
+                suggestion: 'Informe o CID-10 principal (formato: A00-Z99) ou descreva a indicação clínica',
             });
         }
 
         // Validar formato dos CIDs informados
-        for (const cid of cids) {
+        for (const cid of codigosDiagnostico) {
+            // Normalizar (alguns sistemas enviam sem ponto)
+            const normalizedCid = cid.includes('.') || cid.length < 4 ? cid : `${cid.slice(0, 3)}.${cid.slice(3)}`;
+
             const regex = /^[A-Z]\d{2}(\.\d{1,2})?$/;
-            if (!regex.test(cid)) {
+
+            if (!regex.test(normalizedCid)) {
                 errors.push({
                     id: crypto.randomUUID(),
                     line: 0,
@@ -164,6 +171,25 @@ export class CID10ObrigatorioRule implements ValidationRule {
                     field: 'cid10',
                     suggestion: 'Formato esperado: A00 até Z99 (ex: I10, E11.9)',
                 });
+            } else {
+                // Validação de categorias inexistentes (Ex: 000, 999 em alguns casos)
+                const categoria = normalizedCid.split('.')[0];
+                const letra = categoria[0];
+                const numero = parseInt(categoria.slice(1));
+
+                // Letra U é para códigos especiais (emergência/novos), mas letras inválidas devem falhar
+                if (!['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'].includes(letra)) {
+                    errors.push({
+                        id: crypto.randomUUID(),
+                        line: 0,
+                        column: 0,
+                        message: `Categoria CID inexistente: ${categoria}`,
+                        severity: 'error',
+                        code: 'CID003',
+                        field: 'cid10',
+                        suggestion: 'Verifique a letra inicial do CID',
+                    });
+                }
             }
         }
 

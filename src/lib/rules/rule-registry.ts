@@ -49,6 +49,7 @@ import {
     CardinalityRule,
     IdentificacaoTransacaoRule,
 } from './xsd-structural-rules';
+import { SexoProcedimentoRule, DuplicidadeGuiaRule, LateralidadeRule } from './clinical-rules';
 
 /**
  * Instância global do motor de regras
@@ -122,6 +123,9 @@ export function registerBuiltInRules(): void {
     globalRuleEngine.register(new AnexoObrigatorioRule());
     globalRuleEngine.register(new AnexoFormatoRule());
     globalRuleEngine.register(new AnexoObrigatorioPorProcedimentoRule()); // Nova regra de anexos por procedimento
+    globalRuleEngine.register(new SexoProcedimentoRule());
+    globalRuleEngine.register(new DuplicidadeGuiaRule());
+    globalRuleEngine.register(new LateralidadeRule());
 
     const stats = globalRuleEngine.getStats();
     console.log(`✓ ${stats.total} regras registradas (${stats.enabled} habilitadas)`);

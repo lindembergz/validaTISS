@@ -1,10 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { 
-  FileCheck, 
-  LayoutDashboard, 
-  History, 
+import {
+  FileCheck,
+  LayoutDashboard,
+  History,
   Menu,
   X,
   Shield
@@ -15,8 +15,8 @@ import { cn } from '@/lib/utils';
 const navItems = [
   { href: '/', label: 'Início', icon: Shield },
   { href: '/validar', label: 'Validar', icon: FileCheck },
-  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { href: '/historico', label: 'Histórico', icon: History },
+  /*{ href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/historico', label: 'Histórico', icon: History },*/
 ];
 
 export function Header() {
@@ -48,7 +48,7 @@ export function Header() {
           {navItems.map((item) => {
             const isActive = location.pathname === item.href;
             const Icon = item.icon;
-            
+
             return (
               <Link key={item.href} to={item.href}>
                 <Button
@@ -67,14 +67,14 @@ export function Header() {
           })}
         </nav>
 
-        <div className="hidden md:flex items-center gap-3">
+        {/*  <div className="hidden md:flex items-center gap-3">
           <Button variant="outline" size="sm">
             Entrar
           </Button>
           <Button variant="hero" size="sm">
             Começar Grátis
           </Button>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Button */}
         <Button
@@ -99,10 +99,10 @@ export function Header() {
             {navItems.map((item) => {
               const isActive = location.pathname === item.href;
               const Icon = item.icon;
-              
+
               return (
-                <Link 
-                  key={item.href} 
+                <Link
+                  key={item.href}
                   to={item.href}
                   onClick={() => setMobileMenuOpen(false)}
                 >

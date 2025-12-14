@@ -10,6 +10,7 @@ import { CBOService } from "@/lib/services/cbo.service";
 import { useEffect } from "react";
 import Index from "./pages/Index";
 import Validar from "./pages/Validar";
+import Documentacao from "./pages/Documentacao";
 import Dashboard from "./pages/Dashboard";
 import Historico from "./pages/Historico";
 import NotFound from "./pages/NotFound";
@@ -35,6 +36,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/validar" element={<Validar />} />
+            <Route path="/documentacao" element={<Documentacao />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/historico" element={<Historico />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

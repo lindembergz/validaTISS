@@ -17,24 +17,24 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-muted-foreground mb-4">
-              Validação de Guias TISS conforme padrão ANS 4.02.00. 
+              Validação de Guias TISS conforme padrão ANS 4.02.00.
               Simples, rápido e confiável.
             </p>
             <div className="flex gap-2">
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="p-2 rounded-lg hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
               >
                 <Github className="h-5 w-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="p-2 rounded-lg hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
               >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="p-2 rounded-lg hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
               >
                 <Linkedin className="h-5 w-5" />
@@ -47,9 +47,8 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Produto</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link to="/validar" className="hover:text-foreground transition-colors">Validar XML</Link></li>
-              <li><Link to="/dashboard" className="hover:text-foreground transition-colors">Dashboard</Link></li>
-              <li><Link to="/historico" className="hover:text-foreground transition-colors">Histórico</Link></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">API</a></li>
+              <li><Link to="/documentacao" className="hover:text-foreground transition-colors">Documentação</Link></li>
+              {/*<li><Link to="/historico" className="hover:text-foreground transition-colors">Histórico</Link></li>*/}
             </ul>
           </div>
 
@@ -58,9 +57,8 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Recursos</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><a href="https://www.gov.br/ans" target="_blank" rel="noopener" className="hover:text-foreground transition-colors">Portal ANS</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Documentação TISS</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">Schemas XSD</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">FAQ</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Padrão TISS</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Tabelas TUSS</a></li>
             </ul>
           </div>
 
@@ -68,9 +66,8 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#" className="hover:text-foreground transition-colors">Termos de Uso</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Privacidade</a></li>
-              <li><a href="#" className="hover:text-foreground transition-colors">LGPD</a></li>
+              <li><a href="#" className="hover:text-foreground transition-colors">Termos</a></li>
               <li><a href="#" className="hover:text-foreground transition-colors">Contato</a></li>
             </ul>
           </div>

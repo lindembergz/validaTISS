@@ -36,16 +36,17 @@ const features = [
     title: 'Conformidade ANS',
     description: 'Em total conformidade com o padrão TISS vigente a partir de maio/2025.',
   },
-  {
+  /*{
     icon: BarChart3,
     title: 'Dashboard Analítico',
     description: 'Acompanhe estatísticas de validação, erros mais comuns e tendências.',
   },
+ 
   {
     icon: History,
     title: 'Histórico Completo',
     description: 'Acesse todas as suas validações anteriores com filtros e exportação.',
-  },
+  }, */
   {
     icon: Lock,
     title: 'Seguro e Privado',
@@ -67,7 +68,7 @@ export default function Index() {
 
   useEffect(() => {
     // Verifica se o usuário já fechou o alerta antes
-    const alertClosed = localStorage.getItem('tissVersionAlertClosed');
+    const alertClosed = localStorage.getItem('tissVersionAlertClosed_v2');
     if (!alertClosed) {
       setShowAlert(true);
     }
@@ -75,7 +76,7 @@ export default function Index() {
 
   const handleCloseAlert = () => {
     setShowAlert(false);
-    localStorage.setItem('tissVersionAlertClosed', 'true');
+    localStorage.setItem('tissVersionAlertClosed_v2', 'true');
   };
 
   return (
@@ -116,13 +117,12 @@ export default function Index() {
                 </h3>
 
                 <p className="text-blue-800 dark:text-blue-200 mb-6 leading-relaxed">
-                  Valide seus arquivos na nova versão do TISS. Em caso de dúvida mande mensagem pelo{' '}
-                  <span className="font-semibold">SUPORTE</span> ou email para{' '}
+                  Valide seus arquivos na nova versão do TISS. Em caso de dúvida ou sugestão, envie um email para{' '}
                   <a
-                    href="mailto:suporte@teksoft.info"
+                    href="mailto:cortezlindemberg@gmail.com"
                     className="text-blue-600 dark:text-blue-400 hover:underline font-semibold"
                   >
-                    suporte@teksoft.info
+                    cortezlindemberg@gmail.com
                   </a>
                   .
                 </p>
@@ -141,7 +141,7 @@ export default function Index() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative overflow-hidden py-20 md:py-32">
+        <section className="relative overflow-hidden py-20 md:py-1">
           {/* Background Pattern */}
           <div className="absolute inset-0 bg-grid-pattern opacity-50" />
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-to-b from-tiss-blue/10 via-accent/5 to-transparent rounded-full blur-3xl" />
@@ -177,13 +177,15 @@ export default function Index() {
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
-                <Button variant="outline" size="xl" className="w-full sm:w-auto">
-                  Ver Documentação
-                </Button>
+                <Link to="/documentacao">
+                  <Button variant="outline" size="xl" className="w-full sm:w-auto">
+                    Ver Documentação
+                  </Button>
+                </Link>
               </div>
 
               {/* Trust badges */}
-              <div className="flex flex-wrap items-center justify-center gap-6 mt-12 pt-12 border-t border-border/50">
+              {/* <div className="flex flex-wrap items-center justify-center gap-6 mt-12 pt-12 border-t border-border/50">
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <CheckCircle2 className="w-5 h-5 text-success" />
                   <span>+10.000 validações</span>
@@ -196,12 +198,12 @@ export default function Index() {
                   <Users className="w-5 h-5 text-accent" />
                   <span>+500 usuários ativos</span>
                 </div>
-              </div>
+              </div>--*/}
             </motion.div>
           </div>
         </section>
 
-        {/* Supported Guia Types */}
+        {/* Supported Guia Types 
         <section className="py-12 border-y border-border bg-muted/30">
           <div className="container">
             <p className="text-center text-sm text-muted-foreground mb-6">
@@ -222,6 +224,38 @@ export default function Index() {
               ))}
             </div>
           </div>
+        </section>*/}
+
+        {/* Destaque de Redução de Glosas */}
+        <section className="py-16 bg-gradient-to-r from-green-500/5 via-emerald-500/5 to-teal-500/5">
+          <div className="container">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="max-w-4xl mx-auto"
+            >
+              <div className="p-8 md:p-12 rounded-3xl bg-card border border-green-500/20 shadow-xl">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+                  <div className="text-center">
+                    <div className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-green-500 to-emerald-500 bg-clip-text text-transparent">
+                      80%
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-2">de redução</p>
+                  </div>
+                  <div className="text-center md:text-left max-w-lg">
+                    <h3 className="text-2xl md:text-3xl font-display font-bold mb-3">
+                      Reduza até <span className="text-green-500">80% das glosas</span>
+                    </h3>
+                    <p className="text-muted-foreground">
+                      Previna erros de preenchimento, duplicidades, incompatibilidade clínica (sexo/procedimento),
+                      códigos TUSS obsoletos e inconsistências estruturais.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </section>
 
         {/* Features Section */}
@@ -237,10 +271,59 @@ export default function Index() {
                 Tudo que você precisa para{' '}
                 <span className="gradient-text">validar guias</span>
               </h2>
-              <p className="text-muted-foreground max-w-2xl mx-auto">
-                Uma plataforma completa com validação em tempo real, relatórios detalhados
-                e conformidade total com o padrão TISS da ANS.
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Nossa plataforma combina tecnologia de ponta com as regras oficiais da ANS para blindar seu faturamento.
+                Validamos cada detalhe do arquivo XML, desde a estrutura técnica até inconsistências clínicas sutis
+                que costumam passar despercebidas.
               </p>
+
+              <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto text-left">
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="mt-1 bg-green-100 dark:bg-green-900/30 p-1 rounded-full">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-muted-foreground">Validação Estrutural e Schema XSD Oficial (TISS 4.02.00)</span>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="mt-1 bg-green-100 dark:bg-green-900/30 p-1 rounded-full">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-muted-foreground">Auditoria de Qualidade de Dados (CPF, CNS, CNPJ, CBO)</span>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="mt-1 bg-green-100 dark:bg-green-900/30 p-1 rounded-full">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-muted-foreground">Análise de Regras de Negócio (Prazos, Duplicidades, Lotes)</span>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="mt-1 bg-green-100 dark:bg-green-900/30 p-1 rounded-full">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-muted-foreground">Inteligência Clínica (Sexo x Procedimento, CID-10, Idade)</span>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="mt-1 bg-green-100 dark:bg-green-900/30 p-1 rounded-full">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-muted-foreground">Validação de Tabelas de Domínio (TUSS, UF, Conselhos)</span>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <div className="mt-1 bg-green-100 dark:bg-green-900/30 p-1 rounded-full">
+                    <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400" />
+                  </div>
+                  <span className="text-muted-foreground">Detecção de Erros Críticos de Glosa (Causas Principais)</span>
+                </div>
+              </div>
+              <br></br>
+              <h3 className="text-sm text-muted-foreground">
+                🔒 Processamento 100% client-side (dados não são enviados a servidores)
+              </h3>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -282,7 +365,6 @@ export default function Index() {
               </h2>
               <p className="text-lg opacity-90 mb-8">
                 Comece a validar suas guias TISS gratuitamente.
-                50 validações por mês no plano gratuito.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/validar">
@@ -294,20 +376,20 @@ export default function Index() {
                     <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </Link>
-                <Button
+                {/*<Button
                   variant="outline"
                   size="xl"
                   className="w-full sm:w-auto border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
                 >
                   Ver Planos
-                </Button>
+                </Button>*/}
               </div>
             </motion.div>
           </div>
         </section>
       </main>
 
-      <Footer />
+      {/*<Footer />*/}
     </div>
   );
 }
