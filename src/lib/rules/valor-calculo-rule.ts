@@ -183,6 +183,7 @@ export class ValorCalculoRule implements ValidationRule {
 
         let somaTotal = 0;
 
+        // Validar cálculo individual de cada procedimento
         for (const proc of procedimentos) {
             console.log(`[ValorCalculoRule] Validando: ${proc.codigo || 'sem código'}`);
             console.log(`  Valor Unit: R$ ${proc.valorUnitario.toFixed(2)}`);
@@ -215,34 +216,46 @@ export class ValorCalculoRule implements ValidationRule {
             somaTotal += proc.valorTotal;
         }
 
-        // Validar valor total da guia (se disponível)
-        const valorTotalGuia = extractNumericValue(context.parsedXml, 'valortotalguia') ||
-            extractNumericValue(context.parsedXml, 'valortotalgeral') ||
-            extractNumericValue(context.parsedXml, 'valortotal');
+        // Detectar se é um lote com múltiplas guias
+        const guias = extractFieldValues(context.parsedXml, 'numeroguiaprestador');
+        const isLoteMultiplasGuias = guias.length > 1;
 
-        if (valorTotalGuia !== null && procedimentos.length > 0) {
-            const diferencaTotal = Math.abs(somaTotal - valorTotalGuia);
+        console.log(`[ValorCalculoRule] Número de guias detectadas: ${guias.length}`);
+        console.log(`[ValorCalculoRule] É lote com múltiplas guias: ${isLoteMultiplasGuias}`);
 
-            console.log(`\n[ValorCalculoRule] Soma procedimentos: R$ ${somaTotal.toFixed(2)}`);
-            console.log(`[ValorCalculoRule] Valor total guia: R$ ${valorTotalGuia.toFixed(2)}`);
-            console.log(`[ValorCalculoRule] Diferença: R$ ${diferencaTotal.toFixed(2)}`);
+        // Validar valor total APENAS se for guia individual (não lote)
+        if (!isLoteMultiplasGuias && procedimentos.length > 0) {
+            const valorTotalGuia = extractNumericValue(context.parsedXml, 'valortotalguia') ||
+                extractNumericValue(context.parsedXml, 'valortotalgeral') ||
+                extractNumericValue(context.parsedXml, 'valorprocedimentos');
 
-            // Tolerância de R$ 0,10 para soma total (mais flexível devido a múltiplos arredondamentos)
-            if (diferencaTotal > 0.10) {
-                console.log(`  ❌ ERRO: Soma total inconsistente`);
-                errors.push({
-                    id: crypto.randomUUID(),
-                    line: 0,
-                    column: 0,
-                    message: `Soma dos procedimentos (R$ ${somaTotal.toFixed(2)}) diferente do valor total da guia (R$ ${valorTotalGuia.toFixed(2)})`,
-                    severity: 'error',
-                    code: 'VAL008',
-                    field: 'valorTotalGuia',
-                    suggestion: 'Verifique se todos os procedimentos foram somados corretamente. Diferença: R$ ' + diferencaTotal.toFixed(2),
-                });
-            } else {
-                console.log(`  ✅ Soma total correta`);
+            if (valorTotalGuia !== null) {
+                const diferencaTotal = Math.abs(somaTotal - valorTotalGuia);
+
+                console.log(`\n[ValorCalculoRule] Soma procedimentos: R$ ${somaTotal.toFixed(2)}`);
+                console.log(`[ValorCalculoRule] Valor total guia: R$ ${valorTotalGuia.toFixed(2)}`);
+                console.log(`[ValorCalculoRule] Diferença: R$ ${diferencaTotal.toFixed(2)}`);
+
+                // Tolerância de R$ 0,10 para soma total (mais flexível devido a múltiplos arredondamentos)
+                if (diferencaTotal > 0.10) {
+                    console.log(`  ❌ ERRO: Soma total inconsistente`);
+                    errors.push({
+                        id: crypto.randomUUID(),
+                        line: 0,
+                        column: 0,
+                        message: `Soma dos procedimentos (R$ ${somaTotal.toFixed(2)}) diferente do valor total da guia (R$ ${valorTotalGuia.toFixed(2)})`,
+                        severity: 'error',
+                        code: 'VAL008',
+                        field: 'valorTotalGuia',
+                        suggestion: 'Verifique se todos os procedimentos foram somados corretamente. Diferença: R$ ' + diferencaTotal.toFixed(2),
+                    });
+                } else {
+                    console.log(`  ✅ Soma total correta`);
+                }
             }
+        } else if (isLoteMultiplasGuias) {
+            console.log(`\n[ValorCalculoRule] ⚠️ Lote com múltiplas guias detectado - validação de soma total desabilitada`);
+            console.log(`[ValorCalculoRule] Soma total de todos os procedimentos: R$ ${somaTotal.toFixed(2)}`);
         }
 
         console.log('====================================================\n');
